@@ -1,0 +1,9 @@
+pandas
+numpy
+matplotlib
+plotly
+jupyter
+yfinance
+requests
+pyyaml
+scikit-learn
