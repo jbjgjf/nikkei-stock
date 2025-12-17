@@ -62,22 +62,22 @@ _EN_PUNCT = r"[\\s\\.,'\"/&\\-–—_()\\[\\]{}]"
 
 # Instrument classification keywords (uppercased; matched on sanitized names)
 _INSTRUMENT_PATTERNS: Tuple[Tuple[re.Pattern, str], ...] = (
-    (re.compile(r"\\bETF\\b"), "ETF keyword"),
-    (re.compile(r"\\bETN\\b"), "ETN keyword"),
-    (re.compile(r"\\bREIT\\b"), "REIT keyword"),
-    (re.compile(r"\\bJ\\s*REIT\\b"), "J-REIT keyword"),
-    (re.compile(r"\\bFUND\\b"), "Fund keyword"),
-    (re.compile(r"\\bTRUST\\b"), "Trust keyword"),
-    (re.compile(r"\\bINDEX\\b"), "Index keyword"),
-    (re.compile(r"\\bNIKKEI\\b"), "Index keyword: Nikkei"),
-    (re.compile(r"\\bTOPIX\\b"), "Index keyword: TOPIX"),
-    (re.compile(r"\\bINVERSE\\b"), "Inverse/short keyword"),
-    (re.compile(r"\\bSHORT\\b"), "Inverse/short keyword"),
-    (re.compile(r"\\bBEAR\\b"), "Inverse/short keyword"),
-    (re.compile(r"\\bLEVERAGE\\w*\\b"), "Leveraged keyword"),
-    (re.compile(r"\\bGEARED\\b"), "Leveraged keyword"),
-    (re.compile(r"\\bBOND\\b"), "Bond/notes keyword"),
-    (re.compile(r"\\bNOTE\\b"), "Bond/notes keyword"),
+    (re.compile(r"\bETF\b"), "ETF keyword"),
+    (re.compile(r"\bETN\b"), "ETN keyword"),
+    (re.compile(r"\bREIT\b"), "REIT keyword"),
+    (re.compile(r"\bJ\s*REIT\b"), "J-REIT keyword"),
+    (re.compile(r"\bFUND\b"), "Fund keyword"),
+    (re.compile(r"\bTRUST\b"), "Trust keyword"),
+    (re.compile(r"\bINDEX\b"), "Index keyword"),
+    (re.compile(r"\bNIKKEI\b"), "Index keyword: Nikkei"),
+    (re.compile(r"\bTOPIX\b"), "Index keyword: TOPIX"),
+    (re.compile(r"\bINVERSE\b"), "Inverse/short keyword"),
+    (re.compile(r"\bSHORT\b"), "Inverse/short keyword"),
+    (re.compile(r"\bBEAR\b"), "Inverse/short keyword"),
+    (re.compile(r"\bLEVERAGE\w*\b"), "Leveraged keyword"),
+    (re.compile(r"\bGEARED\b"), "Leveraged keyword"),
+    (re.compile(r"\bBOND\b"), "Bond/notes keyword"),
+    (re.compile(r"\bNOTE\b"), "Bond/notes keyword"),
 )
 
 
@@ -208,8 +208,12 @@ def build_english_map(universe_path: Path, out_path: Path, opco_out_path: Path, 
             instr_reason = row.get("instrument_reason", "") if "instrument_reason" in row else ""
             if is_instr is None:
                 is_instr, instr_reason = classify_instrument(long_name, short_name)
-            elif pd.isna(instr_reason) or not instr_reason:
-                _, instr_reason = classify_instrument(long_name, short_name)
+            else:
+                new_instr, new_reason = classify_instrument(long_name, short_name)
+                if pd.isna(instr_reason) or not instr_reason:
+                    instr_reason = new_reason
+                if new_instr and not is_instr:
+                    is_instr = new_instr
 
             records.append(
                 {

@@ -499,11 +499,12 @@ def build_flags(
     sbti_cov = out["sbti_flag"].sum()
     gx_cov = out["is_gx"].sum()
 
+    denom = n_after if n_after else 1
     print("[OK] climate_commitment_flags.csv generated")
     print(f"Universe size: before filter={n_before}, after filter={n_after}")
-    print(f"GX coverage:   {gx_cov} ({gx_cov/n_after:.1%})")
-    print(f"TCFD coverage: {tcfd_cov} ({tcfd_cov/n_after:.1%})")
-    print(f"SBTi coverage: {sbti_cov} ({sbti_cov/n_after:.1%})")
+    print(f"GX coverage:   {gx_cov} ({gx_cov/denom:.1%})")
+    print(f"TCFD coverage: {tcfd_cov} ({tcfd_cov/denom:.1%})")
+    print(f"SBTi coverage: {sbti_cov} ({sbti_cov/denom:.1%})")
     print(f"Unmatched rows written to: {out_unmatched_path}")
     print(f"[OK] climate_commitment_scores.csv generated: {scores_out_path}")
 
