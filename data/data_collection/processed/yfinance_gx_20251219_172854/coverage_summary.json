@@ -1,0 +1,15 @@
+{
+  "input_rows": 252,
+  "success_rows": 252,
+  "error_rows": 0,
+  "has_info_calls": 252,
+  "income_statement_available": 250,
+  "balance_sheet_available": 250,
+  "cashflow_available": 250,
+  "output_dir": "/Users/shou/hobby/CPX/nikkei-stock/data/data_collection/processed/yfinance_gx_20251219_172854",
+  "files": {
+    "wide": "/Users/shou/hobby/CPX/nikkei-stock/data/data_collection/processed/yfinance_gx_20251219_172854/financials_wide.csv",
+    "long": "/Users/shou/hobby/CPX/nikkei-stock/data/data_collection/processed/yfinance_gx_20251219_172854/financials_long_annual.csv",
+    "errors": "/Users/shou/hobby/CPX/nikkei-stock/data/data_collection/processed/yfinance_gx_20251219_172854/errors.csv"
+  }
+}
