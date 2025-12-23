@@ -1,0 +1,11 @@
+{
+  "input_envlink_csv": "/Users/shou/hobby/CPX/nikkei-stock/data/data_collection/processed/yfinance_gx_20251219_172854/2nd screening/_generated_envgraph_20251223_195808/exact_targets.csv",
+  "outdir": "/Users/shou/hobby/CPX/nikkei-stock/data/data_collection/processed/yfinance_gx_20251219_172854/2nd screening/_generated_envgraph_20251223_204017",
+  "targets_exact": 184,
+  "gas_ids": [
+    1
+  ],
+  "ok_graph_count": 0,
+  "missing_count": 184,
+  "long_rows": 0
+}
