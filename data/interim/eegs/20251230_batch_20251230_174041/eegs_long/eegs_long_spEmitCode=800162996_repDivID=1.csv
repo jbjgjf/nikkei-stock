@@ -1,0 +1,14 @@
+spEmitCode,repDivID,gasID,gas_name_raw,gas_name_norm,unit,year,value,label,is_reported,fetched_at,source_url
+800162996,1,0,合計,合計,,2020,2782.0,"2,782",1,2025-12-30T08:49:25.638947+00:00,https://eegs.env.go.jp/ghg-santeikohyo-result/corporate/graph?gasID=0&spEmitCode=800162996&repDivID=1
+800162996,1,0,合計,合計,,2021,3712.0,"3,712",1,2025-12-30T08:49:25.638947+00:00,https://eegs.env.go.jp/ghg-santeikohyo-result/corporate/graph?gasID=0&spEmitCode=800162996&repDivID=1
+800162996,1,0,合計,合計,,2022,3945.0,"3,945",1,2025-12-30T08:49:25.638947+00:00,https://eegs.env.go.jp/ghg-santeikohyo-result/corporate/graph?gasID=0&spEmitCode=800162996&repDivID=1
+800162996,1,0,合計,合計,,2023,4072.0,"4,072",1,2025-12-30T08:49:25.638947+00:00,https://eegs.env.go.jp/ghg-santeikohyo-result/corporate/graph?gasID=0&spEmitCode=800162996&repDivID=1
+800162996,1,1,エネルギー起源CO<sub>2</sub>,エネルギー起源CO_2,,2020,2782.0,"2,782",1,2025-12-30T08:49:25.638947+00:00,https://eegs.env.go.jp/ghg-santeikohyo-result/corporate/graph?gasID=1&spEmitCode=800162996&repDivID=1
+800162996,1,1,エネルギー起源CO<sub>2</sub>,エネルギー起源CO_2,,2021,3712.0,"3,712",1,2025-12-30T08:49:25.638947+00:00,https://eegs.env.go.jp/ghg-santeikohyo-result/corporate/graph?gasID=1&spEmitCode=800162996&repDivID=1
+800162996,1,1,エネルギー起源CO<sub>2</sub>,エネルギー起源CO_2,,2022,3945.0,"3,945",1,2025-12-30T08:49:25.638947+00:00,https://eegs.env.go.jp/ghg-santeikohyo-result/corporate/graph?gasID=1&spEmitCode=800162996&repDivID=1
+800162996,1,1,エネルギー起源CO<sub>2</sub>,エネルギー起源CO_2,,2023,4072.0,"4,072",1,2025-12-30T08:49:25.638947+00:00,https://eegs.env.go.jp/ghg-santeikohyo-result/corporate/graph?gasID=1&spEmitCode=800162996&repDivID=1
+800162996,1,11,エネルギー起源CO<sub>2</sub>（廃棄物の原燃料使用）,エネルギー起源CO_2（廃棄物の原燃料使用）,,2023,1.0,0,1,2025-12-30T08:49:25.638947+00:00,https://eegs.env.go.jp/ghg-santeikohyo-result/corporate/graph?gasID=11&spEmitCode=800162996&repDivID=1
+800162996,1,20,調整後排出量,調整後排出量,,2020,2890.0,"2,890",1,2025-12-30T08:49:25.638947+00:00,https://eegs.env.go.jp/ghg-santeikohyo-result/corporate/graph?gasID=20&spEmitCode=800162996&repDivID=1
+800162996,1,20,調整後排出量,調整後排出量,,2021,4280.0,"4,280",1,2025-12-30T08:49:25.638947+00:00,https://eegs.env.go.jp/ghg-santeikohyo-result/corporate/graph?gasID=20&spEmitCode=800162996&repDivID=1
+800162996,1,20,調整後排出量,調整後排出量,,2022,4443.0,"4,443",1,2025-12-30T08:49:25.638947+00:00,https://eegs.env.go.jp/ghg-santeikohyo-result/corporate/graph?gasID=20&spEmitCode=800162996&repDivID=1
+800162996,1,20,調整後排出量,調整後排出量,,2023,4402.0,"4,402",1,2025-12-30T08:49:25.638947+00:00,https://eegs.env.go.jp/ghg-santeikohyo-result/corporate/graph?gasID=20&spEmitCode=800162996&repDivID=1

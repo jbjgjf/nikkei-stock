@@ -1,0 +1,7 @@
+metric,higher_is_better,weight,winsorize_p,winsor_lo,winsor_hi,transform,n_total,n_nonnull_raw,n_nonnull_used,missing_rate_raw,skipped,method,available_metrics,normalized_weights,n_entities,year_mode
+energy_co2,False,1.0,0.01,7.887663416133229,24.146215286430884,signed_log1p,183.0,183.0,183.0,0.0,False,,,,,
+adjusted_emissions,False,0.7,0.01,7.567624756425106,29.981380799163517,signed_log1p,183.0,178.0,178.0,0.02732240437158473,False,,,,,
+total_emissions,False,0.5,0.01,7.887663416133229,30.141492690198547,signed_log1p,183.0,183.0,183.0,0.0,False,,,,,
+non_energy_co2,False,0.3,0.01,6.381123778714269,22.27825793977406,signed_log1p,183.0,41.0,41.0,0.7759562841530054,False,,,,,
+energy_co2_pre_allocation,False,0.2,0.01,2.9386145302422046,31.08732373543537,signed_log1p,183.0,15.0,15.0,0.9180327868852459,False,,,,,
+__TOTAL__,,,,,,,,,,,False,weighted_percentile_composite,"['energy_co2', 'adjusted_emissions', 'total_emissions', 'non_energy_co2', 'energy_co2_pre_allocation']","{'energy_co2': 0.37037037037037035, 'adjusted_emissions': 0.25925925925925924, 'total_emissions': 0.18518518518518517, 'non_energy_co2': 0.1111111111111111, 'energy_co2_pre_allocation': 0.07407407407407407}",183.0,latest

@@ -1,0 +1,11 @@
+spEmitCode,repDivID,gasID,gas_name_raw,gas_name_norm,unit,year,value,label,is_reported,fetched_at,source_url
+675007221,1,0,合計,合計,千,2021,12567.0,13,1,2025-12-30T09:35:07.014123+00:00,https://eegs.env.go.jp/ghg-santeikohyo-result/corporate/graph?gasID=0&spEmitCode=675007221&repDivID=1
+675007221,1,0,合計,合計,千,2022,16245.0,16,1,2025-12-30T09:35:07.014123+00:00,https://eegs.env.go.jp/ghg-santeikohyo-result/corporate/graph?gasID=0&spEmitCode=675007221&repDivID=1
+675007221,1,0,合計,合計,千,2023,17214.0,17,1,2025-12-30T09:35:07.014123+00:00,https://eegs.env.go.jp/ghg-santeikohyo-result/corporate/graph?gasID=0&spEmitCode=675007221&repDivID=1
+675007221,1,1,エネルギー起源CO<sub>2</sub>,エネルギー起源CO_2,千,2021,12567.0,13,1,2025-12-30T09:35:07.014123+00:00,https://eegs.env.go.jp/ghg-santeikohyo-result/corporate/graph?gasID=1&spEmitCode=675007221&repDivID=1
+675007221,1,1,エネルギー起源CO<sub>2</sub>,エネルギー起源CO_2,千,2022,16245.0,16,1,2025-12-30T09:35:07.014123+00:00,https://eegs.env.go.jp/ghg-santeikohyo-result/corporate/graph?gasID=1&spEmitCode=675007221&repDivID=1
+675007221,1,1,エネルギー起源CO<sub>2</sub>,エネルギー起源CO_2,千,2023,15751.0,16,1,2025-12-30T09:35:07.014123+00:00,https://eegs.env.go.jp/ghg-santeikohyo-result/corporate/graph?gasID=1&spEmitCode=675007221&repDivID=1
+675007221,1,11,エネルギー起源CO<sub>2</sub>（廃棄物の原燃料使用）,エネルギー起源CO_2（廃棄物の原燃料使用）,,2023,1463.0,"1,463",1,2025-12-30T09:35:07.014123+00:00,https://eegs.env.go.jp/ghg-santeikohyo-result/corporate/graph?gasID=11&spEmitCode=675007221&repDivID=1
+675007221,1,20,調整後排出量,調整後排出量,千,2021,12552.0,13,1,2025-12-30T09:35:07.014123+00:00,https://eegs.env.go.jp/ghg-santeikohyo-result/corporate/graph?gasID=20&spEmitCode=675007221&repDivID=1
+675007221,1,20,調整後排出量,調整後排出量,千,2022,16260.0,16,1,2025-12-30T09:35:07.014123+00:00,https://eegs.env.go.jp/ghg-santeikohyo-result/corporate/graph?gasID=20&spEmitCode=675007221&repDivID=1
+675007221,1,20,調整後排出量,調整後排出量,千,2023,11872.0,12,1,2025-12-30T09:35:07.014123+00:00,https://eegs.env.go.jp/ghg-santeikohyo-result/corporate/graph?gasID=20&spEmitCode=675007221&repDivID=1

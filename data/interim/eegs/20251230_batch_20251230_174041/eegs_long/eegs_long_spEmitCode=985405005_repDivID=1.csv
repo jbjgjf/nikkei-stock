@@ -1,0 +1,11 @@
+spEmitCode,repDivID,gasID,gas_name_raw,gas_name_norm,unit,year,value,label,is_reported,fetched_at,source_url
+985405005,1,0,合計,合計,,2021,3498.0,"3,498",1,2025-12-30T08:53:13.539363+00:00,https://eegs.env.go.jp/ghg-santeikohyo-result/corporate/graph?gasID=0&spEmitCode=985405005&repDivID=1
+985405005,1,0,合計,合計,,2022,2921.0,"2,921",1,2025-12-30T08:53:13.539363+00:00,https://eegs.env.go.jp/ghg-santeikohyo-result/corporate/graph?gasID=0&spEmitCode=985405005&repDivID=1
+985405005,1,0,合計,合計,,2023,3498.0,"3,498",1,2025-12-30T08:53:13.539363+00:00,https://eegs.env.go.jp/ghg-santeikohyo-result/corporate/graph?gasID=0&spEmitCode=985405005&repDivID=1
+985405005,1,1,エネルギー起源CO<sub>2</sub>,エネルギー起源CO_2,,2021,3498.0,"3,498",1,2025-12-30T08:53:13.539363+00:00,https://eegs.env.go.jp/ghg-santeikohyo-result/corporate/graph?gasID=1&spEmitCode=985405005&repDivID=1
+985405005,1,1,エネルギー起源CO<sub>2</sub>,エネルギー起源CO_2,,2022,2921.0,"2,921",1,2025-12-30T08:53:13.539363+00:00,https://eegs.env.go.jp/ghg-santeikohyo-result/corporate/graph?gasID=1&spEmitCode=985405005&repDivID=1
+985405005,1,1,エネルギー起源CO<sub>2</sub>,エネルギー起源CO_2,,2023,3498.0,"3,498",1,2025-12-30T08:53:13.539363+00:00,https://eegs.env.go.jp/ghg-santeikohyo-result/corporate/graph?gasID=1&spEmitCode=985405005&repDivID=1
+985405005,1,11,エネルギー起源CO<sub>2</sub>（廃棄物の原燃料使用）,エネルギー起源CO_2（廃棄物の原燃料使用）,,2023,1.0,0,1,2025-12-30T08:53:13.539363+00:00,https://eegs.env.go.jp/ghg-santeikohyo-result/corporate/graph?gasID=11&spEmitCode=985405005&repDivID=1
+985405005,1,20,調整後排出量,調整後排出量,,2021,3477.0,"3,477",1,2025-12-30T08:53:13.539363+00:00,https://eegs.env.go.jp/ghg-santeikohyo-result/corporate/graph?gasID=20&spEmitCode=985405005&repDivID=1
+985405005,1,20,調整後排出量,調整後排出量,,2022,2917.0,"2,917",1,2025-12-30T08:53:13.539363+00:00,https://eegs.env.go.jp/ghg-santeikohyo-result/corporate/graph?gasID=20&spEmitCode=985405005&repDivID=1
+985405005,1,20,調整後排出量,調整後排出量,,2023,3511.0,"3,511",1,2025-12-30T08:53:13.539363+00:00,https://eegs.env.go.jp/ghg-santeikohyo-result/corporate/graph?gasID=20&spEmitCode=985405005&repDivID=1
