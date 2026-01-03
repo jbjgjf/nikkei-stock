@@ -1,0 +1,145 @@
+version: 0.1
+axes:
+  - axis_id: axis_01
+    name: TBD_axis_01
+    label_set: ["◎", "○", "×"]
+    description: "TODO: define rule objective"
+    rules:
+      - rule_id: r01_01
+        if: "tag_001 == YES and tag_002 == YES"
+        then: "◎"
+        rationale: "TODO: describe rationale"
+      - rule_id: r01_02
+        if: "tag_001 == NO"
+        then: "×"
+        rationale: "TODO: describe rationale"
+      - rule_id: r01_03
+        if: "otherwise"
+        then: "○"
+        rationale: "TODO: describe rationale"
+
+  - axis_id: axis_02
+    name: TBD_axis_02
+    label_set: ["高", "中", "低"]
+    description: "TODO: define rule objective"
+    rules:
+      - rule_id: r02_01
+        if: "tag_003 == YES"
+        then: "高"
+        rationale: "TODO: describe rationale"
+      - rule_id: r02_02
+        if: "tag_003 == NO"
+        then: "低"
+        rationale: "TODO: describe rationale"
+      - rule_id: r02_03
+        if: "otherwise"
+        then: "中"
+        rationale: "TODO: describe rationale"
+
+  - axis_id: axis_03
+    name: TBD_axis_03
+    label_set: ["○", "△", "×"]
+    description: "TODO: define rule objective"
+    rules:
+      - rule_id: r03_01
+        if: "tag_004 == YES"
+        then: "○"
+        rationale: "TODO: describe rationale"
+      - rule_id: r03_02
+        if: "tag_004 == NO"
+        then: "×"
+        rationale: "TODO: describe rationale"
+      - rule_id: r03_03
+        if: "otherwise"
+        then: "△"
+        rationale: "TODO: describe rationale"
+
+  - axis_id: axis_04
+    name: TBD_axis_04
+    label_set: ["◎", "○", "×"]
+    description: "TODO: define rule objective"
+    rules:
+      - rule_id: r04_01
+        if: "tag_005 == YES and tag_006 == YES"
+        then: "◎"
+        rationale: "TODO: describe rationale"
+      - rule_id: r04_02
+        if: "tag_005 == NO"
+        then: "×"
+        rationale: "TODO: describe rationale"
+      - rule_id: r04_03
+        if: "otherwise"
+        then: "○"
+        rationale: "TODO: describe rationale"
+
+  - axis_id: axis_05
+    name: TBD_axis_05
+    label_set: ["高", "中", "低"]
+    description: "TODO: define rule objective"
+    rules:
+      - rule_id: r05_01
+        if: "tag_007 == YES"
+        then: "高"
+        rationale: "TODO: describe rationale"
+      - rule_id: r05_02
+        if: "tag_007 == NO"
+        then: "低"
+        rationale: "TODO: describe rationale"
+      - rule_id: r05_03
+        if: "otherwise"
+        then: "中"
+        rationale: "TODO: describe rationale"
+
+  - axis_id: axis_06
+    name: TBD_axis_06
+    label_set: ["○", "△", "×"]
+    description: "TODO: define rule objective"
+    rules:
+      - rule_id: r06_01
+        if: "tag_008 == YES"
+        then: "○"
+        rationale: "TODO: describe rationale"
+      - rule_id: r06_02
+        if: "tag_008 == NO"
+        then: "×"
+        rationale: "TODO: describe rationale"
+      - rule_id: r06_03
+        if: "otherwise"
+        then: "△"
+        rationale: "TODO: describe rationale"
+
+  - axis_id: axis_07
+    name: TBD_axis_07
+    label_set: ["◎", "○", "×"]
+    description: "TODO: define rule objective"
+    rules:
+      - rule_id: r07_01
+        if: "tag_009 == YES"
+        then: "◎"
+        rationale: "TODO: describe rationale"
+      - rule_id: r07_02
+        if: "tag_009 == NO"
+        then: "×"
+        rationale: "TODO: describe rationale"
+      - rule_id: r07_03
+        if: "otherwise"
+        then: "○"
+        rationale: "TODO: describe rationale"
+
+  - axis_id: axis_08
+    name: TBD_axis_08
+    label_set: ["高", "中", "低"]
+    description: "TODO: define rule objective"
+    rules:
+      - rule_id: r08_01
+        if: "tag_010 == YES"
+        then: "高"
+        rationale: "TODO: describe rationale"
+      - rule_id: r08_02
+        if: "tag_010 == NO"
+        then: "低"
+        rationale: "TODO: describe rationale"
+      - rule_id: r08_03
+        if: "otherwise"
+        then: "中"
+        rationale: "TODO: describe rationale"

@@ -1,0 +1,333 @@
+version: 0.1
+value_domain: [YES, NO, UNK]
+tags:
+  - id: tag_001
+    name: TBD_001
+    description: TODO: define tag meaning
+    category: TBD
+    value_domain: [YES, NO, UNK]
+    source_hint: TBD
+  - id: tag_002
+    name: TBD_002
+    description: TODO: define tag meaning
+    category: TBD
+    value_domain: [YES, NO, UNK]
+    source_hint: TBD
+  - id: tag_003
+    name: TBD_003
+    description: TODO: define tag meaning
+    category: TBD
+    value_domain: [YES, NO, UNK]
+    source_hint: TBD
+  - id: tag_004
+    name: TBD_004
+    description: TODO: define tag meaning
+    category: TBD
+    value_domain: [YES, NO, UNK]
+    source_hint: TBD
+  - id: tag_005
+    name: TBD_005
+    description: TODO: define tag meaning
+    category: TBD
+    value_domain: [YES, NO, UNK]
+    source_hint: TBD
+  - id: tag_006
+    name: TBD_006
+    description: TODO: define tag meaning
+    category: TBD
+    value_domain: [YES, NO, UNK]
+    source_hint: TBD
+  - id: tag_007
+    name: TBD_007
+    description: TODO: define tag meaning
+    category: TBD
+    value_domain: [YES, NO, UNK]
+    source_hint: TBD
+  - id: tag_008
+    name: TBD_008
+    description: TODO: define tag meaning
+    category: TBD
+    value_domain: [YES, NO, UNK]
+    source_hint: TBD
+  - id: tag_009
+    name: TBD_009
+    description: TODO: define tag meaning
+    category: TBD
+    value_domain: [YES, NO, UNK]
+    source_hint: TBD
+  - id: tag_010
+    name: TBD_010
+    description: TODO: define tag meaning
+    category: TBD
+    value_domain: [YES, NO, UNK]
+    source_hint: TBD
+  - id: tag_011
+    name: TBD_011
+    description: TODO: define tag meaning
+    category: TBD
+    value_domain: [YES, NO, UNK]
+    source_hint: TBD
+  - id: tag_012
+    name: TBD_012
+    description: TODO: define tag meaning
+    category: TBD
+    value_domain: [YES, NO, UNK]
+    source_hint: TBD
+  - id: tag_013
+    name: TBD_013
+    description: TODO: define tag meaning
+    category: TBD
+    value_domain: [YES, NO, UNK]
+    source_hint: TBD
+  - id: tag_014
+    name: TBD_014
+    description: TODO: define tag meaning
+    category: TBD
+    value_domain: [YES, NO, UNK]
+    source_hint: TBD
+  - id: tag_015
+    name: TBD_015
+    description: TODO: define tag meaning
+    category: TBD
+    value_domain: [YES, NO, UNK]
+    source_hint: TBD
+  - id: tag_016
+    name: TBD_016
+    description: TODO: define tag meaning
+    category: TBD
+    value_domain: [YES, NO, UNK]
+    source_hint: TBD
+  - id: tag_017
+    name: TBD_017
+    description: TODO: define tag meaning
+    category: TBD
+    value_domain: [YES, NO, UNK]
+    source_hint: TBD
+  - id: tag_018
+    name: TBD_018
+    description: TODO: define tag meaning
+    category: TBD
+    value_domain: [YES, NO, UNK]
+    source_hint: TBD
+  - id: tag_019
+    name: TBD_019
+    description: TODO: define tag meaning
+    category: TBD
+    value_domain: [YES, NO, UNK]
+    source_hint: TBD
+  - id: tag_020
+    name: TBD_020
+    description: TODO: define tag meaning
+    category: TBD
+    value_domain: [YES, NO, UNK]
+    source_hint: TBD
+  - id: tag_021
+    name: TBD_021
+    description: TODO: define tag meaning
+    category: TBD
+    value_domain: [YES, NO, UNK]
+    source_hint: TBD
+  - id: tag_022
+    name: TBD_022
+    description: TODO: define tag meaning
+    category: TBD
+    value_domain: [YES, NO, UNK]
+    source_hint: TBD
+  - id: tag_023
+    name: TBD_023
+    description: TODO: define tag meaning
+    category: TBD
+    value_domain: [YES, NO, UNK]
+    source_hint: TBD
+  - id: tag_024
+    name: TBD_024
+    description: TODO: define tag meaning
+    category: TBD
+    value_domain: [YES, NO, UNK]
+    source_hint: TBD
+  - id: tag_025
+    name: TBD_025
+    description: TODO: define tag meaning
+    category: TBD
+    value_domain: [YES, NO, UNK]
+    source_hint: TBD
+  - id: tag_026
+    name: TBD_026
+    description: TODO: define tag meaning
+    category: TBD
+    value_domain: [YES, NO, UNK]
+    source_hint: TBD
+  - id: tag_027
+    name: TBD_027
+    description: TODO: define tag meaning
+    category: TBD
+    value_domain: [YES, NO, UNK]
+    source_hint: TBD
+  - id: tag_028
+    name: TBD_028
+    description: TODO: define tag meaning
+    category: TBD
+    value_domain: [YES, NO, UNK]
+    source_hint: TBD
+  - id: tag_029
+    name: TBD_029
+    description: TODO: define tag meaning
+    category: TBD
+    value_domain: [YES, NO, UNK]
+    source_hint: TBD
+  - id: tag_030
+    name: TBD_030
+    description: TODO: define tag meaning
+    category: TBD
+    value_domain: [YES, NO, UNK]
+    source_hint: TBD
+  - id: tag_031
+    name: TBD_031
+    description: TODO: define tag meaning
+    category: TBD
+    value_domain: [YES, NO, UNK]
+    source_hint: TBD
+  - id: tag_032
+    name: TBD_032
+    description: TODO: define tag meaning
+    category: TBD
+    value_domain: [YES, NO, UNK]
+    source_hint: TBD
+  - id: tag_033
+    name: TBD_033
+    description: TODO: define tag meaning
+    category: TBD
+    value_domain: [YES, NO, UNK]
+    source_hint: TBD
+  - id: tag_034
+    name: TBD_034
+    description: TODO: define tag meaning
+    category: TBD
+    value_domain: [YES, NO, UNK]
+    source_hint: TBD
+  - id: tag_035
+    name: TBD_035
+    description: TODO: define tag meaning
+    category: TBD
+    value_domain: [YES, NO, UNK]
+    source_hint: TBD
+  - id: tag_036
+    name: TBD_036
+    description: TODO: define tag meaning
+    category: TBD
+    value_domain: [YES, NO, UNK]
+    source_hint: TBD
+  - id: tag_037
+    name: TBD_037
+    description: TODO: define tag meaning
+    category: TBD
+    value_domain: [YES, NO, UNK]
+    source_hint: TBD
+  - id: tag_038
+    name: TBD_038
+    description: TODO: define tag meaning
+    category: TBD
+    value_domain: [YES, NO, UNK]
+    source_hint: TBD
+  - id: tag_039
+    name: TBD_039
+    description: TODO: define tag meaning
+    category: TBD
+    value_domain: [YES, NO, UNK]
+    source_hint: TBD
+  - id: tag_040
+    name: TBD_040
+    description: TODO: define tag meaning
+    category: TBD
+    value_domain: [YES, NO, UNK]
+    source_hint: TBD
+  - id: tag_041
+    name: TBD_041
+    description: TODO: define tag meaning
+    category: TBD
+    value_domain: [YES, NO, UNK]
+    source_hint: TBD
+  - id: tag_042
+    name: TBD_042
+    description: TODO: define tag meaning
+    category: TBD
+    value_domain: [YES, NO, UNK]
+    source_hint: TBD
+  - id: tag_043
+    name: TBD_043
+    description: TODO: define tag meaning
+    category: TBD
+    value_domain: [YES, NO, UNK]
+    source_hint: TBD
+  - id: tag_044
+    name: TBD_044
+    description: TODO: define tag meaning
+    category: TBD
+    value_domain: [YES, NO, UNK]
+    source_hint: TBD
+  - id: tag_045
+    name: TBD_045
+    description: TODO: define tag meaning
+    category: TBD
+    value_domain: [YES, NO, UNK]
+    source_hint: TBD
+  - id: tag_046
+    name: TBD_046
+    description: TODO: define tag meaning
+    category: TBD
+    value_domain: [YES, NO, UNK]
+    source_hint: TBD
+  - id: tag_047
+    name: TBD_047
+    description: TODO: define tag meaning
+    category: TBD
+    value_domain: [YES, NO, UNK]
+    source_hint: TBD
+  - id: tag_048
+    name: TBD_048
+    description: TODO: define tag meaning
+    category: TBD
+    value_domain: [YES, NO, UNK]
+    source_hint: TBD
+  - id: tag_049
+    name: TBD_049
+    description: TODO: define tag meaning
+    category: TBD
+    value_domain: [YES, NO, UNK]
+    source_hint: TBD
+  - id: tag_050
+    name: TBD_050
+    description: TODO: define tag meaning
+    category: TBD
+    value_domain: [YES, NO, UNK]
+    source_hint: TBD
+  - id: tag_051
+    name: TBD_051
+    description: TODO: define tag meaning
+    category: TBD
+    value_domain: [YES, NO, UNK]
+    source_hint: TBD
+  - id: tag_052
+    name: TBD_052
+    description: TODO: define tag meaning
+    category: TBD
+    value_domain: [YES, NO, UNK]
+    source_hint: TBD
+  - id: tag_053
+    name: TBD_053
+    description: TODO: define tag meaning
+    category: TBD
+    value_domain: [YES, NO, UNK]
+    source_hint: TBD
+  - id: tag_054
+    name: TBD_054
+    description: TODO: define tag meaning
+    category: TBD
+    value_domain: [YES, NO, UNK]
+    source_hint: TBD
+  - id: tag_055
+    name: TBD_055
+    description: TODO: define tag meaning
+    category: TBD
+    value_domain: [YES, NO, UNK]
+    source_hint: TBD
