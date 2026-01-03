@@ -243,3 +243,87 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+
+
+
+# Phase3 入口：PhaseEランキングから第三次候補を自動選定（Gap / Jenks）
+
+## 位置づけ
+- `p2_75/phaseE_rank_panel.csv` は「Phase2.75（第二次スクリーニングの最終系）」のランキング（PhaseE）です。
+- ここから第三次スクリーニングに進める企業群を、**上位N社のように恣意的に固定せず**、スコア分布に基づいて決めます。
+
+## 使うスコア
+- PhaseEは概ね `score__phaseE = score__total * quality_weight` で作られています。
+- Phase3入口の自動選定は基本的に `score__phaseE` を用います。
+
+## 手法
+- `gap`（最大ギャップ）
+  - `score__phaseE` を降順に並べ、隣接差分 `gap = score[i] - score[i+1]` が最大となる点を「不連続点」として採用します。
+  - 下位側のノイズで過大ギャップが出るのを避けるため、探索範囲を **上位 top_fraction** に限定します。
+  - `min_selected` により「少なすぎる」選定を回避します（ハード下限）。
+
+- `jenks`（Fisher–Jenks Natural Breaks）
+  - `score__phaseE` に対して Fisher–Jenks 自然分類を適用し、スコア分布の自然なまとまり（クラス）を抽出します。
+  - 上位クラスから順に候補に含め、目標社数 `target_selected` に到達するまで累積します。
+  - 目標到達時に境界クラスが大きい場合、境界クラス内で **n_scored_metrics → quality_weight → score__total** を優先して必要数のみを追加し、恣意性を抑えつつ候補数を調整します。
+  - `min_selected` は絶対に下回りません（ハード下限）。
+
+## 実行スクリプト
+- `scripts/eegs_scoring/select_phaseE_gap_cutoff.py`（Gap / Jenks 両対応）
+
+### 入力
+- `/Users/shou/hobby/CPX/nikkei-stock/data/scores/p2_75/phaseE_rank_panel.csv`
+
+### 出力（Phase3の入口として p3 に保存）
+- `/Users/shou/hobby/CPX/nikkei-stock/data/scores/p3/<run_id>/`
+  - `phaseE_gap_rank_panel.csv`（gap列 + jenks列付きの全ランキング）
+  - `phaseE_selected.csv`（第三次に進む候補）
+  - `selection_summary.md`（閾値・選定数・説明文）
+
+### コマンド例（gap）
+```bash
+python scripts/eegs_scoring/select_phaseE_gap_cutoff.py \
+  --method gap \
+  --input /Users/shou/hobby/CPX/nikkei-stock/data/scores/p2_75/phaseE_rank_panel.csv \
+  --run_id 20260103_p3_start_phaseE_gap_from_p2_75 \
+  --year 2023 \
+  --top_fraction 0.30 \
+  --min_selected 20
+
+## 位置づけ
+- `p2_75/phaseE_rank_panel.csv` は「Phase2.75（第二次スクリーニングの最終系）」のランキング（PhaseE）です。
+- ここから第三次スクリーニングに進める企業群を、**上位N社のように恣意的に固定せず**、スコア分布の自然な切れ目（不連続点）で決めます。
+
+## 使うスコア
+- PhaseEはこのREADME冒頭の通り、概ね `score__phaseE = score__total * quality_weight` で作られています。
+- 本選定では `score__phaseE` を降順に並べ、隣接差分 `gap = score[i] - score[i+1]` が最大になる点を「不連続点」として採用します。
+
+## 下位ノイズ対策（重要）
+スコア下位側は0付近に張り付くことがあり、そこで巨大ギャップが出ると選定が不安定になります。
+そのため、最大ギャップ探索は **上位top_fraction（例：30%）の範囲内** に限定します。
+
+## 実行スクリプト
+- `scripts/eegs_scoring/select_phaseE_gap_cutoff.py`
+
+### 入力
+- `/Users/shou/hobby/CPX/nikkei-stock/data/scores/p2_75/phaseE_rank_panel.csv`
+
+### 出力（Phase3の入口として p3 に保存）
+- `/Users/shou/hobby/CPX/nikkei-stock/data/scores/p3/<run_id>/`
+  - `phaseE_gap_rank_panel.csv`（gap列付きの全ランキング）
+  - `phaseE_selected.csv`（不連続点以上＝第三次に進む候補）
+  - `selection_summary.md`（閾値・選定数・説明文）
+
+### コマンド例
+```bash
+python scripts/eegs_scoring/select_phaseE_gap_cutoff.py \
+  --input /Users/shou/hobby/CPX/nikkei-stock/data/scores/p2_75/phaseE_rank_panel.csv \
+  --run_id 20260103_p3_start_phaseE_gap_from_p2_75 \
+  --year 2023 \
+  --top_fraction 0.30 \
+  --min_selected 10
+```
+
+## レポートに書ける説明（そのまま貼れる）
+PhaseEスコアを降順に並べ、隣接スコア差（gap）の最大点を「不連続点」として採用した。
+下位側のノイズで過大ギャップが出ることを避けるため、上位top_fractionの範囲内で最大gapを探索し、当該スコアを閾値として第三次候補群を定義した。
