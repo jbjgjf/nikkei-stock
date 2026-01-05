@@ -1,2 +1,37 @@
 pdf,txt,blocks,total_pages,low_text_pages
 data/source/corpus/キリンホールディングス.pdf,data/interim/phase3/20260104_2047_pymupdf/corpus_text/キリンホールディングス.txt,data/interim/phase3/20260104_2047_pymupdf/corpus_text/キリンホールディングス_blocks.csv,51,1
+data/source/corpus/25_full_j.pdf,SKIP_EXISTING,outputs exist,data/interim/phase3/20260104_2047_pymupdf/corpus_text/25_full_j.txt,data/interim/phase3/20260104_2047_pymupdf/corpus_text/25_full_j_blocks.csv,,
+data/source/corpus/JR西日本.pdf,SKIP_EXISTING,outputs exist,data/interim/phase3/20260104_2047_pymupdf/corpus_text/JR西日本.txt,data/interim/phase3/20260104_2047_pymupdf/corpus_text/JR西日本_blocks.csv,,
+data/source/corpus/アズビル.pdf,OK,,data/interim/phase3/20260104_2047_pymupdf/corpus_text/アズビル.txt,data/interim/phase3/20260104_2047_pymupdf/corpus_text/アズビル_blocks.csv,94,2
+data/source/corpus/イトーキ.pdf,OK,,data/interim/phase3/20260104_2047_pymupdf/corpus_text/イトーキ.txt,data/interim/phase3/20260104_2047_pymupdf/corpus_text/イトーキ_blocks.csv,126,3
+data/source/corpus/オムロン.pdf,OK,,data/interim/phase3/20260104_2047_pymupdf/corpus_text/オムロン.txt,data/interim/phase3/20260104_2047_pymupdf/corpus_text/オムロン_blocks.csv,60,0
+data/source/corpus/キリンホールディングス.pdf,SKIP_EXISTING,outputs exist,data/interim/phase3/20260104_2047_pymupdf/corpus_text/キリンホールディングス.txt,data/interim/phase3/20260104_2047_pymupdf/corpus_text/キリンホールディングス_blocks.csv,,
+data/source/corpus/サカタインクス.pdf,OK,,data/interim/phase3/20260104_2047_pymupdf/corpus_text/サカタインクス.txt,data/interim/phase3/20260104_2047_pymupdf/corpus_text/サカタインクス_blocks.csv,46,0
+data/source/corpus/シンフォニアテクノロジー.pdf,OK,,data/interim/phase3/20260104_2047_pymupdf/corpus_text/シンフォニアテクノロジー.txt,data/interim/phase3/20260104_2047_pymupdf/corpus_text/シンフォニアテクノロジー_blocks.csv,24,0
+data/source/corpus/ダイヘン.pdf,OK,,data/interim/phase3/20260104_2047_pymupdf/corpus_text/ダイヘン.txt,data/interim/phase3/20260104_2047_pymupdf/corpus_text/ダイヘン_blocks.csv,23,1
+data/source/corpus/マブチモーター.pdf,OK,,data/interim/phase3/20260104_2047_pymupdf/corpus_text/マブチモーター.txt,data/interim/phase3/20260104_2047_pymupdf/corpus_text/マブチモーター_blocks.csv,56,1
+data/source/corpus/三井物産.pdf,OK,,data/interim/phase3/20260104_2047_pymupdf/corpus_text/三井物産.txt,data/interim/phase3/20260104_2047_pymupdf/corpus_text/三井物産_blocks.csv,219,1
+data/source/corpus/三浦工業.pdf,OK,,data/interim/phase3/20260104_2047_pymupdf/corpus_text/三浦工業.txt,data/interim/phase3/20260104_2047_pymupdf/corpus_text/三浦工業_blocks.csv,40,0
+data/source/corpus/丸紅.pdf,OK,,data/interim/phase3/20260104_2047_pymupdf/corpus_text/丸紅.txt,data/interim/phase3/20260104_2047_pymupdf/corpus_text/丸紅_blocks.csv,40,0
+data/source/corpus/九州旅客鉄道.pdf,OK,,data/interim/phase3/20260104_2047_pymupdf/corpus_text/九州旅客鉄道.txt,data/interim/phase3/20260104_2047_pymupdf/corpus_text/九州旅客鉄道_blocks.csv,86,2
+data/source/corpus/伊藤忠商事.pdf,OK,,data/interim/phase3/20260104_2047_pymupdf/corpus_text/伊藤忠商事.txt,data/interim/phase3/20260104_2047_pymupdf/corpus_text/伊藤忠商事_blocks.csv,50,0
+data/source/corpus/住友林業.pdf,OK,,data/interim/phase3/20260104_2047_pymupdf/corpus_text/住友林業.txt,data/interim/phase3/20260104_2047_pymupdf/corpus_text/住友林業_blocks.csv,159,0
+data/source/corpus/双日_removed.pdf,OK,,data/interim/phase3/20260104_2047_pymupdf/corpus_text/双日_removed.txt,data/interim/phase3/20260104_2047_pymupdf/corpus_text/双日_removed_blocks.csv,83,1
+data/source/corpus/商船三井.pdf,OK,,data/interim/phase3/20260104_2047_pymupdf/corpus_text/商船三井.txt,data/interim/phase3/20260104_2047_pymupdf/corpus_text/商船三井_blocks.csv,70,1
+data/source/corpus/大成建設_removed.pdf,OK,,data/interim/phase3/20260104_2047_pymupdf/corpus_text/大成建設_removed.txt,data/interim/phase3/20260104_2047_pymupdf/corpus_text/大成建設_removed_blocks.csv,37,1
+data/source/corpus/大東建託.pdf,OK,,data/interim/phase3/20260104_2047_pymupdf/corpus_text/大東建託.txt,data/interim/phase3/20260104_2047_pymupdf/corpus_text/大東建託_blocks.csv,33,0
+data/source/corpus/大林組.pdf,OK,,data/interim/phase3/20260104_2047_pymupdf/corpus_text/大林組.txt,data/interim/phase3/20260104_2047_pymupdf/corpus_text/大林組_blocks.csv,101,1
+data/source/corpus/小林製薬.pdf,OK,,data/interim/phase3/20260104_2047_pymupdf/corpus_text/小林製薬.txt,data/interim/phase3/20260104_2047_pymupdf/corpus_text/小林製薬_blocks.csv,46,0
+data/source/corpus/山善.pdf,OK,,data/interim/phase3/20260104_2047_pymupdf/corpus_text/山善.txt,data/interim/phase3/20260104_2047_pymupdf/corpus_text/山善_blocks.csv,79,1
+data/source/corpus/川崎汽船.pdf,OK,,data/interim/phase3/20260104_2047_pymupdf/corpus_text/川崎汽船.txt,data/interim/phase3/20260104_2047_pymupdf/corpus_text/川崎汽船_blocks.csv,87,1
+data/source/corpus/戸田建設.pdf,OK,,data/interim/phase3/20260104_2047_pymupdf/corpus_text/戸田建設.txt,data/interim/phase3/20260104_2047_pymupdf/corpus_text/戸田建設_blocks.csv,48,0
+data/source/corpus/日本紙パルプ商事.pdf,OK,,data/interim/phase3/20260104_2047_pymupdf/corpus_text/日本紙パルプ商事.txt,data/interim/phase3/20260104_2047_pymupdf/corpus_text/日本紙パルプ商事_blocks.csv,116,2
+data/source/corpus/日本郵船.pdf,OK,,data/interim/phase3/20260104_2047_pymupdf/corpus_text/日本郵船.txt,data/interim/phase3/20260104_2047_pymupdf/corpus_text/日本郵船_blocks.csv,62,1
+data/source/corpus/横河電機_removed.pdf,OK,,data/interim/phase3/20260104_2047_pymupdf/corpus_text/横河電機_removed.txt,data/interim/phase3/20260104_2047_pymupdf/corpus_text/横河電機_removed_blocks.csv,64,1
+data/source/corpus/王子ホールディングス.pdf,OK,,data/interim/phase3/20260104_2047_pymupdf/corpus_text/王子ホールディングス.txt,data/interim/phase3/20260104_2047_pymupdf/corpus_text/王子ホールディングス_blocks.csv,98,1
+data/source/corpus/豊田通商.pdf,OK,,data/interim/phase3/20260104_2047_pymupdf/corpus_text/豊田通商.txt,data/interim/phase3/20260104_2047_pymupdf/corpus_text/豊田通商_blocks.csv,94,1
+data/source/corpus/酉島製作所（サステナビリティ）.pdf,OK,,data/interim/phase3/20260104_2047_pymupdf/corpus_text/酉島製作所（サステナビリティ）.txt,data/interim/phase3/20260104_2047_pymupdf/corpus_text/酉島製作所（サステナビリティ）_blocks.csv,51,1
+data/source/corpus/長瀬産業.pdf,OK,,data/interim/phase3/20260104_2047_pymupdf/corpus_text/長瀬産業.txt,data/interim/phase3/20260104_2047_pymupdf/corpus_text/長瀬産業_blocks.csv,51,0
+data/source/corpus/阪和興業.pdf,OK,,data/interim/phase3/20260104_2047_pymupdf/corpus_text/阪和興業.txt,data/interim/phase3/20260104_2047_pymupdf/corpus_text/阪和興業_blocks.csv,51,0
+data/source/corpus/静岡ガス.pdf,OK,,data/interim/phase3/20260104_2047_pymupdf/corpus_text/静岡ガス.txt,data/interim/phase3/20260104_2047_pymupdf/corpus_text/静岡ガス_blocks.csv,74,0
+data/source/corpus/高砂熱学工業.pdf,OK,,data/interim/phase3/20260104_2047_pymupdf/corpus_text/高砂熱学工業.txt,data/interim/phase3/20260104_2047_pymupdf/corpus_text/高砂熱学工業_blocks.csv,56,1
