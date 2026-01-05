@@ -1,0 +1,2 @@
+pdf,txt,blocks,total_pages,low_text_pages
+data/source/corpus/キリンホールディングス.pdf,data/interim/phase3/20260104_2047_pymupdf/corpus_text/キリンホールディングス.txt,data/interim/phase3/20260104_2047_pymupdf/corpus_text/キリンホールディングス_blocks.csv,51,1
