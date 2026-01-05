@@ -1,0 +1,316 @@
+entity_id,axis_id,axis_label,rule_id,rationale
+JR西日本,core_score,13/27,core_yes_count,count of core yes tags
+JR西日本,struct::Scope3,1/5,structure_core_yes,core tags by structure
+JR西日本,struct::イノベーション,2/3,structure_core_yes,core tags by structure
+JR西日本,struct::ガバナンス,3/4,structure_core_yes,core tags by structure
+JR西日本,struct::サプライチェーン,3/4,structure_core_yes,core tags by structure
+JR西日本,struct::事業転換,1/3,structure_core_yes,core tags by structure
+JR西日本,struct::全体,0/0,structure_core_yes,core tags by structure
+JR西日本,struct::規制対応,0/4,structure_core_yes,core tags by structure
+JR西日本,struct::透明性,3/4,structure_core_yes,core tags by structure
+アズビル,core_score,17/27,core_yes_count,count of core yes tags
+アズビル,struct::Scope3,3/5,structure_core_yes,core tags by structure
+アズビル,struct::イノベーション,2/3,structure_core_yes,core tags by structure
+アズビル,struct::ガバナンス,3/4,structure_core_yes,core tags by structure
+アズビル,struct::サプライチェーン,3/4,structure_core_yes,core tags by structure
+アズビル,struct::事業転換,1/3,structure_core_yes,core tags by structure
+アズビル,struct::全体,0/0,structure_core_yes,core tags by structure
+アズビル,struct::規制対応,2/4,structure_core_yes,core tags by structure
+アズビル,struct::透明性,3/4,structure_core_yes,core tags by structure
+イトーキ,core_score,15/27,core_yes_count,count of core yes tags
+イトーキ,struct::Scope3,4/5,structure_core_yes,core tags by structure
+イトーキ,struct::イノベーション,2/3,structure_core_yes,core tags by structure
+イトーキ,struct::ガバナンス,2/4,structure_core_yes,core tags by structure
+イトーキ,struct::サプライチェーン,2/4,structure_core_yes,core tags by structure
+イトーキ,struct::事業転換,2/3,structure_core_yes,core tags by structure
+イトーキ,struct::全体,0/0,structure_core_yes,core tags by structure
+イトーキ,struct::規制対応,1/4,structure_core_yes,core tags by structure
+イトーキ,struct::透明性,2/4,structure_core_yes,core tags by structure
+オムロン,core_score,12/27,core_yes_count,count of core yes tags
+オムロン,struct::Scope3,3/5,structure_core_yes,core tags by structure
+オムロン,struct::イノベーション,2/3,structure_core_yes,core tags by structure
+オムロン,struct::ガバナンス,2/4,structure_core_yes,core tags by structure
+オムロン,struct::サプライチェーン,1/4,structure_core_yes,core tags by structure
+オムロン,struct::事業転換,2/3,structure_core_yes,core tags by structure
+オムロン,struct::全体,0/0,structure_core_yes,core tags by structure
+オムロン,struct::規制対応,0/4,structure_core_yes,core tags by structure
+オムロン,struct::透明性,2/4,structure_core_yes,core tags by structure
+キリンホールディングス,core_score,12/27,core_yes_count,count of core yes tags
+キリンホールディングス,struct::Scope3,2/5,structure_core_yes,core tags by structure
+キリンホールディングス,struct::イノベーション,2/3,structure_core_yes,core tags by structure
+キリンホールディングス,struct::ガバナンス,2/4,structure_core_yes,core tags by structure
+キリンホールディングス,struct::サプライチェーン,1/4,structure_core_yes,core tags by structure
+キリンホールディングス,struct::事業転換,1/3,structure_core_yes,core tags by structure
+キリンホールディングス,struct::全体,0/0,structure_core_yes,core tags by structure
+キリンホールディングス,struct::規制対応,1/4,structure_core_yes,core tags by structure
+キリンホールディングス,struct::透明性,3/4,structure_core_yes,core tags by structure
+サカタインクス,core_score,17/27,core_yes_count,count of core yes tags
+サカタインクス,struct::Scope3,3/5,structure_core_yes,core tags by structure
+サカタインクス,struct::イノベーション,2/3,structure_core_yes,core tags by structure
+サカタインクス,struct::ガバナンス,3/4,structure_core_yes,core tags by structure
+サカタインクス,struct::サプライチェーン,2/4,structure_core_yes,core tags by structure
+サカタインクス,struct::事業転換,2/3,structure_core_yes,core tags by structure
+サカタインクス,struct::全体,0/0,structure_core_yes,core tags by structure
+サカタインクス,struct::規制対応,3/4,structure_core_yes,core tags by structure
+サカタインクス,struct::透明性,2/4,structure_core_yes,core tags by structure
+シンフォニアテクノロジー,core_score,2/27,core_yes_count,count of core yes tags
+シンフォニアテクノロジー,struct::Scope3,0/5,structure_core_yes,core tags by structure
+シンフォニアテクノロジー,struct::イノベーション,1/3,structure_core_yes,core tags by structure
+シンフォニアテクノロジー,struct::ガバナンス,0/4,structure_core_yes,core tags by structure
+シンフォニアテクノロジー,struct::サプライチェーン,0/4,structure_core_yes,core tags by structure
+シンフォニアテクノロジー,struct::事業転換,1/3,structure_core_yes,core tags by structure
+シンフォニアテクノロジー,struct::全体,0/0,structure_core_yes,core tags by structure
+シンフォニアテクノロジー,struct::規制対応,0/4,structure_core_yes,core tags by structure
+シンフォニアテクノロジー,struct::透明性,0/4,structure_core_yes,core tags by structure
+ダイフク,core_score,17/27,core_yes_count,count of core yes tags
+ダイフク,struct::Scope3,4/5,structure_core_yes,core tags by structure
+ダイフク,struct::イノベーション,2/3,structure_core_yes,core tags by structure
+ダイフク,struct::ガバナンス,3/4,structure_core_yes,core tags by structure
+ダイフク,struct::サプライチェーン,2/4,structure_core_yes,core tags by structure
+ダイフク,struct::事業転換,2/3,structure_core_yes,core tags by structure
+ダイフク,struct::全体,0/0,structure_core_yes,core tags by structure
+ダイフク,struct::規制対応,2/4,structure_core_yes,core tags by structure
+ダイフク,struct::透明性,2/4,structure_core_yes,core tags by structure
+ダイヘン,core_score,8/27,core_yes_count,count of core yes tags
+ダイヘン,struct::Scope3,1/5,structure_core_yes,core tags by structure
+ダイヘン,struct::イノベーション,1/3,structure_core_yes,core tags by structure
+ダイヘン,struct::ガバナンス,1/4,structure_core_yes,core tags by structure
+ダイヘン,struct::サプライチェーン,1/4,structure_core_yes,core tags by structure
+ダイヘン,struct::事業転換,3/3,structure_core_yes,core tags by structure
+ダイヘン,struct::全体,0/0,structure_core_yes,core tags by structure
+ダイヘン,struct::規制対応,0/4,structure_core_yes,core tags by structure
+ダイヘン,struct::透明性,1/4,structure_core_yes,core tags by structure
+マブチモーター,core_score,11/27,core_yes_count,count of core yes tags
+マブチモーター,struct::Scope3,0/5,structure_core_yes,core tags by structure
+マブチモーター,struct::イノベーション,2/3,structure_core_yes,core tags by structure
+マブチモーター,struct::ガバナンス,3/4,structure_core_yes,core tags by structure
+マブチモーター,struct::サプライチェーン,1/4,structure_core_yes,core tags by structure
+マブチモーター,struct::事業転換,2/3,structure_core_yes,core tags by structure
+マブチモーター,struct::全体,0/0,structure_core_yes,core tags by structure
+マブチモーター,struct::規制対応,2/4,structure_core_yes,core tags by structure
+マブチモーター,struct::透明性,1/4,structure_core_yes,core tags by structure
+三井物産,core_score,11/27,core_yes_count,count of core yes tags
+三井物産,struct::Scope3,2/5,structure_core_yes,core tags by structure
+三井物産,struct::イノベーション,0/3,structure_core_yes,core tags by structure
+三井物産,struct::ガバナンス,4/4,structure_core_yes,core tags by structure
+三井物産,struct::サプライチェーン,2/4,structure_core_yes,core tags by structure
+三井物産,struct::事業転換,2/3,structure_core_yes,core tags by structure
+三井物産,struct::全体,0/0,structure_core_yes,core tags by structure
+三井物産,struct::規制対応,0/4,structure_core_yes,core tags by structure
+三井物産,struct::透明性,1/4,structure_core_yes,core tags by structure
+三浦工業,core_score,13/27,core_yes_count,count of core yes tags
+三浦工業,struct::Scope3,2/5,structure_core_yes,core tags by structure
+三浦工業,struct::イノベーション,3/3,structure_core_yes,core tags by structure
+三浦工業,struct::ガバナンス,2/4,structure_core_yes,core tags by structure
+三浦工業,struct::サプライチェーン,3/4,structure_core_yes,core tags by structure
+三浦工業,struct::事業転換,2/3,structure_core_yes,core tags by structure
+三浦工業,struct::全体,0/0,structure_core_yes,core tags by structure
+三浦工業,struct::規制対応,0/4,structure_core_yes,core tags by structure
+三浦工業,struct::透明性,1/4,structure_core_yes,core tags by structure
+丸紅,core_score,7/27,core_yes_count,count of core yes tags
+丸紅,struct::Scope3,2/5,structure_core_yes,core tags by structure
+丸紅,struct::イノベーション,0/3,structure_core_yes,core tags by structure
+丸紅,struct::ガバナンス,1/4,structure_core_yes,core tags by structure
+丸紅,struct::サプライチェーン,2/4,structure_core_yes,core tags by structure
+丸紅,struct::事業転換,1/3,structure_core_yes,core tags by structure
+丸紅,struct::全体,0/0,structure_core_yes,core tags by structure
+丸紅,struct::規制対応,0/4,structure_core_yes,core tags by structure
+丸紅,struct::透明性,1/4,structure_core_yes,core tags by structure
+九州旅客鉄道,core_score,11/27,core_yes_count,count of core yes tags
+九州旅客鉄道,struct::Scope3,2/5,structure_core_yes,core tags by structure
+九州旅客鉄道,struct::イノベーション,0/3,structure_core_yes,core tags by structure
+九州旅客鉄道,struct::ガバナンス,3/4,structure_core_yes,core tags by structure
+九州旅客鉄道,struct::サプライチェーン,1/4,structure_core_yes,core tags by structure
+九州旅客鉄道,struct::事業転換,2/3,structure_core_yes,core tags by structure
+九州旅客鉄道,struct::全体,0/0,structure_core_yes,core tags by structure
+九州旅客鉄道,struct::規制対応,0/4,structure_core_yes,core tags by structure
+九州旅客鉄道,struct::透明性,3/4,structure_core_yes,core tags by structure
+伊藤忠商事,core_score,14/27,core_yes_count,count of core yes tags
+伊藤忠商事,struct::Scope3,1/5,structure_core_yes,core tags by structure
+伊藤忠商事,struct::イノベーション,1/3,structure_core_yes,core tags by structure
+伊藤忠商事,struct::ガバナンス,4/4,structure_core_yes,core tags by structure
+伊藤忠商事,struct::サプライチェーン,3/4,structure_core_yes,core tags by structure
+伊藤忠商事,struct::事業転換,2/3,structure_core_yes,core tags by structure
+伊藤忠商事,struct::全体,0/0,structure_core_yes,core tags by structure
+伊藤忠商事,struct::規制対応,0/4,structure_core_yes,core tags by structure
+伊藤忠商事,struct::透明性,3/4,structure_core_yes,core tags by structure
+住友林業,core_score,10/27,core_yes_count,count of core yes tags
+住友林業,struct::Scope3,3/5,structure_core_yes,core tags by structure
+住友林業,struct::イノベーション,0/3,structure_core_yes,core tags by structure
+住友林業,struct::ガバナンス,2/4,structure_core_yes,core tags by structure
+住友林業,struct::サプライチェーン,1/4,structure_core_yes,core tags by structure
+住友林業,struct::事業転換,2/3,structure_core_yes,core tags by structure
+住友林業,struct::全体,0/0,structure_core_yes,core tags by structure
+住友林業,struct::規制対応,1/4,structure_core_yes,core tags by structure
+住友林業,struct::透明性,1/4,structure_core_yes,core tags by structure
+双日_removed,core_score,12/27,core_yes_count,count of core yes tags
+双日_removed,struct::Scope3,2/5,structure_core_yes,core tags by structure
+双日_removed,struct::イノベーション,1/3,structure_core_yes,core tags by structure
+双日_removed,struct::ガバナンス,4/4,structure_core_yes,core tags by structure
+双日_removed,struct::サプライチェーン,1/4,structure_core_yes,core tags by structure
+双日_removed,struct::事業転換,2/3,structure_core_yes,core tags by structure
+双日_removed,struct::全体,0/0,structure_core_yes,core tags by structure
+双日_removed,struct::規制対応,0/4,structure_core_yes,core tags by structure
+双日_removed,struct::透明性,2/4,structure_core_yes,core tags by structure
+商船三井,core_score,10/27,core_yes_count,count of core yes tags
+商船三井,struct::Scope3,2/5,structure_core_yes,core tags by structure
+商船三井,struct::イノベーション,1/3,structure_core_yes,core tags by structure
+商船三井,struct::ガバナンス,2/4,structure_core_yes,core tags by structure
+商船三井,struct::サプライチェーン,1/4,structure_core_yes,core tags by structure
+商船三井,struct::事業転換,1/3,structure_core_yes,core tags by structure
+商船三井,struct::全体,0/0,structure_core_yes,core tags by structure
+商船三井,struct::規制対応,0/4,structure_core_yes,core tags by structure
+商船三井,struct::透明性,3/4,structure_core_yes,core tags by structure
+大成建設_removed,core_score,10/27,core_yes_count,count of core yes tags
+大成建設_removed,struct::Scope3,1/5,structure_core_yes,core tags by structure
+大成建設_removed,struct::イノベーション,1/3,structure_core_yes,core tags by structure
+大成建設_removed,struct::ガバナンス,3/4,structure_core_yes,core tags by structure
+大成建設_removed,struct::サプライチェーン,1/4,structure_core_yes,core tags by structure
+大成建設_removed,struct::事業転換,1/3,structure_core_yes,core tags by structure
+大成建設_removed,struct::全体,0/0,structure_core_yes,core tags by structure
+大成建設_removed,struct::規制対応,1/4,structure_core_yes,core tags by structure
+大成建設_removed,struct::透明性,2/4,structure_core_yes,core tags by structure
+大東建託,core_score,7/27,core_yes_count,count of core yes tags
+大東建託,struct::Scope3,0/5,structure_core_yes,core tags by structure
+大東建託,struct::イノベーション,0/3,structure_core_yes,core tags by structure
+大東建託,struct::ガバナンス,2/4,structure_core_yes,core tags by structure
+大東建託,struct::サプライチェーン,1/4,structure_core_yes,core tags by structure
+大東建託,struct::事業転換,2/3,structure_core_yes,core tags by structure
+大東建託,struct::全体,0/0,structure_core_yes,core tags by structure
+大東建託,struct::規制対応,0/4,structure_core_yes,core tags by structure
+大東建託,struct::透明性,2/4,structure_core_yes,core tags by structure
+大林組,core_score,14/27,core_yes_count,count of core yes tags
+大林組,struct::Scope3,2/5,structure_core_yes,core tags by structure
+大林組,struct::イノベーション,1/3,structure_core_yes,core tags by structure
+大林組,struct::ガバナンス,4/4,structure_core_yes,core tags by structure
+大林組,struct::サプライチェーン,1/4,structure_core_yes,core tags by structure
+大林組,struct::事業転換,2/3,structure_core_yes,core tags by structure
+大林組,struct::全体,0/0,structure_core_yes,core tags by structure
+大林組,struct::規制対応,1/4,structure_core_yes,core tags by structure
+大林組,struct::透明性,3/4,structure_core_yes,core tags by structure
+小林製薬,core_score,15/27,core_yes_count,count of core yes tags
+小林製薬,struct::Scope3,3/5,structure_core_yes,core tags by structure
+小林製薬,struct::イノベーション,3/3,structure_core_yes,core tags by structure
+小林製薬,struct::ガバナンス,3/4,structure_core_yes,core tags by structure
+小林製薬,struct::サプライチェーン,2/4,structure_core_yes,core tags by structure
+小林製薬,struct::事業転換,3/3,structure_core_yes,core tags by structure
+小林製薬,struct::全体,0/0,structure_core_yes,core tags by structure
+小林製薬,struct::規制対応,0/4,structure_core_yes,core tags by structure
+小林製薬,struct::透明性,1/4,structure_core_yes,core tags by structure
+山善,core_score,12/27,core_yes_count,count of core yes tags
+山善,struct::Scope3,3/5,structure_core_yes,core tags by structure
+山善,struct::イノベーション,1/3,structure_core_yes,core tags by structure
+山善,struct::ガバナンス,2/4,structure_core_yes,core tags by structure
+山善,struct::サプライチェーン,2/4,structure_core_yes,core tags by structure
+山善,struct::事業転換,3/3,structure_core_yes,core tags by structure
+山善,struct::全体,0/0,structure_core_yes,core tags by structure
+山善,struct::規制対応,0/4,structure_core_yes,core tags by structure
+山善,struct::透明性,1/4,structure_core_yes,core tags by structure
+川崎汽船,core_score,9/27,core_yes_count,count of core yes tags
+川崎汽船,struct::Scope3,1/5,structure_core_yes,core tags by structure
+川崎汽船,struct::イノベーション,1/3,structure_core_yes,core tags by structure
+川崎汽船,struct::ガバナンス,2/4,structure_core_yes,core tags by structure
+川崎汽船,struct::サプライチェーン,1/4,structure_core_yes,core tags by structure
+川崎汽船,struct::事業転換,2/3,structure_core_yes,core tags by structure
+川崎汽船,struct::全体,0/0,structure_core_yes,core tags by structure
+川崎汽船,struct::規制対応,0/4,structure_core_yes,core tags by structure
+川崎汽船,struct::透明性,2/4,structure_core_yes,core tags by structure
+戸田建設,core_score,19/27,core_yes_count,count of core yes tags
+戸田建設,struct::Scope3,4/5,structure_core_yes,core tags by structure
+戸田建設,struct::イノベーション,2/3,structure_core_yes,core tags by structure
+戸田建設,struct::ガバナンス,3/4,structure_core_yes,core tags by structure
+戸田建設,struct::サプライチェーン,2/4,structure_core_yes,core tags by structure
+戸田建設,struct::事業転換,3/3,structure_core_yes,core tags by structure
+戸田建設,struct::全体,0/0,structure_core_yes,core tags by structure
+戸田建設,struct::規制対応,1/4,structure_core_yes,core tags by structure
+戸田建設,struct::透明性,4/4,structure_core_yes,core tags by structure
+日本紙パルプ商事,core_score,14/27,core_yes_count,count of core yes tags
+日本紙パルプ商事,struct::Scope3,3/5,structure_core_yes,core tags by structure
+日本紙パルプ商事,struct::イノベーション,1/3,structure_core_yes,core tags by structure
+日本紙パルプ商事,struct::ガバナンス,2/4,structure_core_yes,core tags by structure
+日本紙パルプ商事,struct::サプライチェーン,2/4,structure_core_yes,core tags by structure
+日本紙パルプ商事,struct::事業転換,2/3,structure_core_yes,core tags by structure
+日本紙パルプ商事,struct::全体,0/0,structure_core_yes,core tags by structure
+日本紙パルプ商事,struct::規制対応,1/4,structure_core_yes,core tags by structure
+日本紙パルプ商事,struct::透明性,3/4,structure_core_yes,core tags by structure
+日本郵船,core_score,15/27,core_yes_count,count of core yes tags
+日本郵船,struct::Scope3,3/5,structure_core_yes,core tags by structure
+日本郵船,struct::イノベーション,1/3,structure_core_yes,core tags by structure
+日本郵船,struct::ガバナンス,3/4,structure_core_yes,core tags by structure
+日本郵船,struct::サプライチェーン,1/4,structure_core_yes,core tags by structure
+日本郵船,struct::事業転換,2/3,structure_core_yes,core tags by structure
+日本郵船,struct::全体,0/0,structure_core_yes,core tags by structure
+日本郵船,struct::規制対応,2/4,structure_core_yes,core tags by structure
+日本郵船,struct::透明性,3/4,structure_core_yes,core tags by structure
+横河電機_removed,core_score,15/27,core_yes_count,count of core yes tags
+横河電機_removed,struct::Scope3,3/5,structure_core_yes,core tags by structure
+横河電機_removed,struct::イノベーション,1/3,structure_core_yes,core tags by structure
+横河電機_removed,struct::ガバナンス,3/4,structure_core_yes,core tags by structure
+横河電機_removed,struct::サプライチェーン,3/4,structure_core_yes,core tags by structure
+横河電機_removed,struct::事業転換,2/3,structure_core_yes,core tags by structure
+横河電機_removed,struct::全体,0/0,structure_core_yes,core tags by structure
+横河電機_removed,struct::規制対応,1/4,structure_core_yes,core tags by structure
+横河電機_removed,struct::透明性,2/4,structure_core_yes,core tags by structure
+王子ホールディングス,core_score,14/27,core_yes_count,count of core yes tags
+王子ホールディングス,struct::Scope3,3/5,structure_core_yes,core tags by structure
+王子ホールディングス,struct::イノベーション,2/3,structure_core_yes,core tags by structure
+王子ホールディングス,struct::ガバナンス,2/4,structure_core_yes,core tags by structure
+王子ホールディングス,struct::サプライチェーン,2/4,structure_core_yes,core tags by structure
+王子ホールディングス,struct::事業転換,1/3,structure_core_yes,core tags by structure
+王子ホールディングス,struct::全体,0/0,structure_core_yes,core tags by structure
+王子ホールディングス,struct::規制対応,0/4,structure_core_yes,core tags by structure
+王子ホールディングス,struct::透明性,4/4,structure_core_yes,core tags by structure
+豊田通商,core_score,11/27,core_yes_count,count of core yes tags
+豊田通商,struct::Scope3,2/5,structure_core_yes,core tags by structure
+豊田通商,struct::イノベーション,1/3,structure_core_yes,core tags by structure
+豊田通商,struct::ガバナンス,2/4,structure_core_yes,core tags by structure
+豊田通商,struct::サプライチェーン,1/4,structure_core_yes,core tags by structure
+豊田通商,struct::事業転換,2/3,structure_core_yes,core tags by structure
+豊田通商,struct::全体,0/0,structure_core_yes,core tags by structure
+豊田通商,struct::規制対応,1/4,structure_core_yes,core tags by structure
+豊田通商,struct::透明性,2/4,structure_core_yes,core tags by structure
+酉島製作所（サステナビリティ）,core_score,5/27,core_yes_count,count of core yes tags
+酉島製作所（サステナビリティ）,struct::Scope3,0/5,structure_core_yes,core tags by structure
+酉島製作所（サステナビリティ）,struct::イノベーション,0/3,structure_core_yes,core tags by structure
+酉島製作所（サステナビリティ）,struct::ガバナンス,0/4,structure_core_yes,core tags by structure
+酉島製作所（サステナビリティ）,struct::サプライチェーン,2/4,structure_core_yes,core tags by structure
+酉島製作所（サステナビリティ）,struct::事業転換,1/3,structure_core_yes,core tags by structure
+酉島製作所（サステナビリティ）,struct::全体,0/0,structure_core_yes,core tags by structure
+酉島製作所（サステナビリティ）,struct::規制対応,1/4,structure_core_yes,core tags by structure
+酉島製作所（サステナビリティ）,struct::透明性,1/4,structure_core_yes,core tags by structure
+長瀬産業,core_score,11/27,core_yes_count,count of core yes tags
+長瀬産業,struct::Scope3,0/5,structure_core_yes,core tags by structure
+長瀬産業,struct::イノベーション,1/3,structure_core_yes,core tags by structure
+長瀬産業,struct::ガバナンス,3/4,structure_core_yes,core tags by structure
+長瀬産業,struct::サプライチェーン,1/4,structure_core_yes,core tags by structure
+長瀬産業,struct::事業転換,2/3,structure_core_yes,core tags by structure
+長瀬産業,struct::全体,0/0,structure_core_yes,core tags by structure
+長瀬産業,struct::規制対応,1/4,structure_core_yes,core tags by structure
+長瀬産業,struct::透明性,3/4,structure_core_yes,core tags by structure
+阪和興業,core_score,9/27,core_yes_count,count of core yes tags
+阪和興業,struct::Scope3,1/5,structure_core_yes,core tags by structure
+阪和興業,struct::イノベーション,1/3,structure_core_yes,core tags by structure
+阪和興業,struct::ガバナンス,2/4,structure_core_yes,core tags by structure
+阪和興業,struct::サプライチェーン,2/4,structure_core_yes,core tags by structure
+阪和興業,struct::事業転換,2/3,structure_core_yes,core tags by structure
+阪和興業,struct::全体,0/0,structure_core_yes,core tags by structure
+阪和興業,struct::規制対応,0/4,structure_core_yes,core tags by structure
+阪和興業,struct::透明性,1/4,structure_core_yes,core tags by structure
+静岡ガス,core_score,7/27,core_yes_count,count of core yes tags
+静岡ガス,struct::Scope3,0/5,structure_core_yes,core tags by structure
+静岡ガス,struct::イノベーション,0/3,structure_core_yes,core tags by structure
+静岡ガス,struct::ガバナンス,1/4,structure_core_yes,core tags by structure
+静岡ガス,struct::サプライチェーン,2/4,structure_core_yes,core tags by structure
+静岡ガス,struct::事業転換,2/3,structure_core_yes,core tags by structure
+静岡ガス,struct::全体,0/0,structure_core_yes,core tags by structure
+静岡ガス,struct::規制対応,0/4,structure_core_yes,core tags by structure
+静岡ガス,struct::透明性,2/4,structure_core_yes,core tags by structure
+高砂熱学工業,core_score,19/27,core_yes_count,count of core yes tags
+高砂熱学工業,struct::Scope3,3/5,structure_core_yes,core tags by structure
+高砂熱学工業,struct::イノベーション,1/3,structure_core_yes,core tags by structure
+高砂熱学工業,struct::ガバナンス,4/4,structure_core_yes,core tags by structure
+高砂熱学工業,struct::サプライチェーン,3/4,structure_core_yes,core tags by structure
+高砂熱学工業,struct::事業転換,3/3,structure_core_yes,core tags by structure
+高砂熱学工業,struct::全体,0/0,structure_core_yes,core tags by structure
+高砂熱学工業,struct::規制対応,2/4,structure_core_yes,core tags by structure
+高砂熱学工業,struct::透明性,3/4,structure_core_yes,core tags by structure

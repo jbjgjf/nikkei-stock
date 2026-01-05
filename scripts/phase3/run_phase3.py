@@ -42,24 +42,43 @@ def parse_args() -> argparse.Namespace:
 def main() -> int:
     args = parse_args()
 
-    candidates_path = Path(args.candidates)
     scores_dir = DEFAULT_SCORES_BASE / args.run_id
     interim_dir = DEFAULT_INTERIM_BASE / args.run_id
 
     scores_dir.mkdir(parents=True, exist_ok=True)
     interim_dir.mkdir(parents=True, exist_ok=True)
 
-    candidates_df = pd.read_csv(candidates_path)
+    corpus_dir = args.corpus_dir
+    # Allow passing a root folder that contains corpus_text/ and block.csv
+    if (corpus_dir / "corpus_text").exists():
+        corpus_dir = corpus_dir / "corpus_text"
+
+    txt_files = sorted(corpus_dir.glob("*.txt"))
+    print(f"[INFO] Found txt files: {len(txt_files)} in {corpus_dir}")
+    candidates_df = pd.DataFrame({"entity_id": [p.stem for p in txt_files]})
+
+    blocks_csv_path = None
+    for fname in ("block.csv", "blocks.csv"):
+        p = args.corpus_dir / fname
+        if p.exists():
+            blocks_csv_path = p
+            break
 
     # 1) Tag extraction
     tags_df, evidence_df = extract_tags(
         candidates_df=candidates_df,
-        corpus_dir=args.corpus_dir,
+        corpus_dir=corpus_dir,
         tags_config_path=args.config_tags,
+        rules_config_path=args.config_rules,
+        blocks_csv_path=blocks_csv_path,
     )
+    print(f"[INFO] Tags rows: {len(tags_df)} | Evidence rows: {len(evidence_df)}")
+
     tags_path = interim_dir / "phase3_tags.csv"
+    tags_long_path = interim_dir / "phase3_tags_long.csv"
     evidence_path = interim_dir / "phase3_evidence.csv"
     tags_df.to_csv(tags_path, index=False)
+    tags_df.to_csv(tags_long_path, index=False)
     evidence_df.to_csv(evidence_path, index=False)
 
     # 2) Rule-based judgments
@@ -75,14 +94,18 @@ def main() -> int:
     # 4) Score/pass outputs (placeholders; implement aggregation in rules module)
     scores_path = scores_dir / "phase3_scores.csv"
     pass_path = scores_dir / "phase3_pass.csv"
+    # NOTE: For now, we output rule judgments as-is.
+    # You can later implement aggregation/scoring to build true scores/pass tables.
     rules_df.to_csv(scores_path, index=False)
     rules_df.to_csv(pass_path, index=False)
 
-    print(f"[OK] tags:    {tags_path}")
-    print(f"[OK] rules:   {rules_path}")
-    print(f"[OK] audit:   {audit_path}")
-    print(f"[OK] scores:  {scores_path}")
-    print(f"[OK] pass:    {pass_path}")
+    print(f"[OK] tags:     {tags_path}")
+    print(f"[OK] tags_long:{tags_long_path}")
+    print(f"[OK] evidence: {evidence_path}")
+    print(f"[OK] rules:    {rules_path}")
+    print(f"[OK] audit:    {audit_path}")
+    print(f"[OK] scores:   {scores_path}")
+    print(f"[OK] pass:     {pass_path}")
     return 0
 
 

@@ -1,145 +1,423 @@
-version: 0.1
-axes:
-  - axis_id: axis_01
-    name: TBD_axis_01
-    label_set: ["◎", "○", "×"]
-    description: "TODO: define rule objective"
-    rules:
-      - rule_id: r01_01
-        if: "tag_001 == YES and tag_002 == YES"
-        then: "◎"
-        rationale: "TODO: describe rationale"
-      - rule_id: r01_02
-        if: "tag_001 == NO"
-        then: "×"
-        rationale: "TODO: describe rationale"
-      - rule_id: r01_03
-        if: "otherwise"
-        then: "○"
-        rationale: "TODO: describe rationale"
+version: 1
 
-  - axis_id: axis_02
-    name: TBD_axis_02
-    label_set: ["高", "中", "低"]
-    description: "TODO: define rule objective"
-    rules:
-      - rule_id: r02_01
-        if: "tag_003 == YES"
-        then: "高"
-        rationale: "TODO: describe rationale"
-      - rule_id: r02_02
-        if: "tag_003 == NO"
-        then: "低"
-        rationale: "TODO: describe rationale"
-      - rule_id: r02_03
-        if: "otherwise"
-        then: "中"
-        rationale: "TODO: describe rationale"
+# Tag-level rules used by scripts/phase3/tagging/extract_tags.py
+# Semantics:
+#   - If any none_match hits => value becomes "no"
+#   - Else if any any_match hits => value becomes the rule's "value" (usually "yes")
+#   - Else => "unk"
 
-  - axis_id: axis_03
-    name: TBD_axis_03
-    label_set: ["○", "△", "×"]
-    description: "TODO: define rule objective"
-    rules:
-      - rule_id: r03_01
-        if: "tag_004 == YES"
-        then: "○"
-        rationale: "TODO: describe rationale"
-      - rule_id: r03_02
-        if: "tag_004 == NO"
-        then: "×"
-        rationale: "TODO: describe rationale"
-      - rule_id: r03_03
-        if: "otherwise"
-        then: "△"
-        rationale: "TODO: describe rationale"
+rules:
+  - tag: sbti_committed
+    value: "yes"
+    any_match:
+      - 'SBTi'
+      - 'Science Based Targets'
+      - '科学的根拠に基づく目標'
+    none_match:
+      - 'SBTi.{0,40}(未参加|参加していない|未申請|申請していない|未取得)'
 
-  - axis_id: axis_04
-    name: TBD_axis_04
-    label_set: ["◎", "○", "×"]
-    description: "TODO: define rule objective"
-    rules:
-      - rule_id: r04_01
-        if: "tag_005 == YES and tag_006 == YES"
-        then: "◎"
-        rationale: "TODO: describe rationale"
-      - rule_id: r04_02
-        if: "tag_005 == NO"
-        then: "×"
-        rationale: "TODO: describe rationale"
-      - rule_id: r04_03
-        if: "otherwise"
-        then: "○"
-        rationale: "TODO: describe rationale"
+  - tag: icp_present
+    value: "yes"
+    any_match:
+      - '(内部炭素価格|インターナルカーボンプライス|ICP)'
+    none_match:
+      - '(内部炭素価格|ICP).{0,40}(導入していない|未導入|未設定)'
 
-  - axis_id: axis_05
-    name: TBD_axis_05
-    label_set: ["高", "中", "低"]
-    description: "TODO: define rule objective"
-    rules:
-      - rule_id: r05_01
-        if: "tag_007 == YES"
-        then: "高"
-        rationale: "TODO: describe rationale"
-      - rule_id: r05_02
-        if: "tag_007 == NO"
-        then: "低"
-        rationale: "TODO: describe rationale"
-      - rule_id: r05_03
-        if: "otherwise"
-        then: "中"
-        rationale: "TODO: describe rationale"
+  - tag: icp_used_for_investment
+    value: "yes"
+    any_match:
+      - '(内部炭素価格|ICP).{0,120}(投資|設備投資|CAPEX|意思決定|投資判断|事業判断|採算)'
+    none_match:
+      - '(内部炭素価格|ICP).{0,80}(検討|今後|予定|将来)'
 
-  - axis_id: axis_06
-    name: TBD_axis_06
-    label_set: ["○", "△", "×"]
-    description: "TODO: define rule objective"
-    rules:
-      - rule_id: r06_01
-        if: "tag_008 == YES"
-        then: "○"
-        rationale: "TODO: describe rationale"
-      - rule_id: r06_02
-        if: "tag_008 == NO"
-        then: "×"
-        rationale: "TODO: describe rationale"
-      - rule_id: r06_03
-        if: "otherwise"
-        then: "△"
-        rationale: "TODO: describe rationale"
+  - tag: scope3_disclosed
+    value: "yes"
+    any_match:
+      - 'Scope\\s*3'
+      - 'スコープ\\s*3'
+      - 'カテゴリ\\s*1[0-5]'
+    none_match:
+      - 'Scope\\s*3.{0,40}(未算定|算定していない|未開示|開示していない)'
 
-  - axis_id: axis_07
-    name: TBD_axis_07
-    label_set: ["◎", "○", "×"]
-    description: "TODO: define rule objective"
-    rules:
-      - rule_id: r07_01
-        if: "tag_009 == YES"
-        then: "◎"
-        rationale: "TODO: describe rationale"
-      - rule_id: r07_02
-        if: "tag_009 == NO"
-        then: "×"
-        rationale: "TODO: describe rationale"
-      - rule_id: r07_03
-        if: "otherwise"
-        then: "○"
-        rationale: "TODO: describe rationale"
+  - tag: scope3_category_level
+    value: "yes"
+    any_match:
+      - 'Scope\\s*3.{0,200}(カテゴリ別|カテゴリー別|Category\\s*[0-9]{1,2}|カテゴリ\\s*[0-9]{1,2})'
+    none_match: []
 
-  - axis_id: axis_08
-    name: TBD_axis_08
-    label_set: ["高", "中", "低"]
-    description: "TODO: define rule objective"
-    rules:
-      - rule_id: r08_01
-        if: "tag_010 == YES"
-        then: "高"
-        rationale: "TODO: describe rationale"
-      - rule_id: r08_02
-        if: "tag_010 == NO"
-        then: "低"
-        rationale: "TODO: describe rationale"
-      - rule_id: r08_03
-        if: "otherwise"
-        then: "中"
-        rationale: "TODO: describe rationale"
+  - tag: supplier_engagement_described
+    value: "yes"
+    any_match:
+      - '(サプライヤ|取引先|調達先).{0,120}(削減要請|協働|連携|支援|エンゲージメント)'
+    none_match: []
+
+  - tag: voluntary_credit_used
+    value: "yes"
+    any_match:
+      - '(カーボンクレジット|carbon credit|ボランタリークレジット|J-クレジット|オフセット|offset)'
+    none_match: []
+
+  - tag: board_committee_exists
+    value: "yes"
+    any_match:
+      - '(ESG委員会|サステナビリティ委員会|気候変動委員会|Climate Committee|Sustainability Committee)'
+    none_match: []
+
+  - tag: executive_compensation_linked
+    value: "yes"
+    any_match:
+      - '(役員報酬|報酬).{0,120}(ESG|気候|温室効果ガス|GHG|削減|KPI).{0,120}(連動|反映|評価)'
+    none_match: []
+
+
+  - tag: third_party_assurance_provided
+    value: "yes"
+    any_match:
+      - '(第三者保証|第三者検証|第三者による保証|assurance|verification)'
+    none_match: []
+
+  # ---- Added: minimal coverage for remaining tags (support/observe + missing core) ----
+
+  - tag: sbti_linked_to_strategy
+    value: "yes"
+    any_match:
+      - 'SBTi.{0,120}(中期|中長期|中計|経営計画|KPI|戦略|事業戦略|マテリアリティ|重点施策)'
+      - 'Science Based Targets.{0,120}(strategy|KPI|medium[- ]term|management plan)'
+      - '科学的根拠に基づく目標.{0,120}(中期|中長期|中計|KPI|戦略|経営計画)'
+    none_match:
+      - 'SBTi.{0,80}(検討中|今後|予定|目指す|方針)'
+
+  - tag: internal_carbon_price_level_disclosed
+    value: "yes"
+    any_match:
+      - '(内部炭素価格|インターナルカーボンプライス|ICP).{0,80}(円|¥|JPY|\$|USD|t-?CO2|tCO2e|トン).{0,40}([0-9]{2,6}|[0-9]+\s*〜\s*[0-9]+)'
+      - '(carbon price|internal carbon price).{0,80}([0-9]{2,6}|[0-9]+\s*\-\s*[0-9]+).{0,40}(USD|\$|JPY|¥|tCO2|tCO2e)'
+    none_match:
+      - '(内部炭素価格|ICP).{0,60}(非開示|開示していない|未開示)'
+
+  - tag: carbon_cost_considered_in_capex
+    value: "yes"
+    any_match:
+      - '(炭素コスト|カーボンコスト|内部炭素価格|ICP).{0,120}(設備投資|CAPEX|投資判断|採算|NPV|IRR|事業評価|意思決定)'
+    none_match:
+      - '(炭素コスト|ICP).{0,80}(検討中|今後|予定|導入予定)'
+
+  - tag: transition_plan_published
+    value: "yes"
+    any_match:
+      - '(トランジションプラン|移行計画|transition plan)'
+      - '(脱炭素ロードマップ|ロードマップ).{0,40}(移行|脱炭素|カーボンニュートラル|Net\s*Zero)'
+    none_match:
+      - '(トランジションプラン|移行計画).{0,60}(策定中|検討中|今後|予定)'
+
+  - tag: board_level_discussion
+    value: "yes"
+    any_match:
+      - '(取締役会|取締役会等).{0,120}(気候変動|脱炭素|GHG|温室効果ガス|ESG|サステナビリティ).{0,120}(議論|審議|報告|監督)'
+      - 'board.{0,80}(climate|decarbon|GHG|ESG|sustainability)'
+    none_match:
+      - '(取締役会).{0,80}(報告のみ|情報共有のみ)'
+
+  - tag: clear_responsibility_line
+    value: "yes"
+    any_match:
+      - '(担当役員|責任者|最高サステナビリティ責任者|CSO|CRO|サステナビリティ担当).{0,120}(任命|設置|責任|統括)'
+      - '(報告ライン|報告体制|レポーティングライン).{0,80}(明確|整備|構築)'
+      - '(sustainability).{0,40}(officer|CSO|CRO).{0,80}(responsible|reports to)'
+    none_match:
+      - '(担当役員|責任者).{0,60}(未設置|不在|検討中)'
+
+  - tag: frequency_of_board_discussion_disclosed
+    value: "yes"
+    any_match:
+      - '(取締役会|委員会).{0,80}(年|回).{0,20}([0-9]{1,2}).{0,20}(回|回開催|開催)'
+      - '(quarterly|monthly|\b[0-9]{1,2}\s*times\b).{0,40}(board|committee)'
+    none_match: []
+
+  - tag: external_expert_involved
+    value: "yes"
+    any_match:
+      - '(外部有識者|外部専門家|第三者専門家|アドバイザー|顧問).{0,120}(助言|参画|関与|活用)'
+      - '(専門家|コンサル).{0,80}(レビュー|評価|助言)'
+      - 'external.{0,40}(expert|advisor|consultant).{0,80}(involved|engaged)'
+    none_match:
+      - '(外部有識者|外部専門家).{0,60}(未活用|いない|不在)'
+
+  - tag: climate_kpi_in_management_evaluation
+    value: "yes"
+    any_match:
+      - '(管理職|マネジメント|評価).{0,120}(気候|脱炭素|GHG|温室効果ガス|ESG).{0,80}(KPI|指標).{0,80}(評価|反映|連動)'
+      - '(management).{0,80}(evaluation|appraisal).{0,80}(climate|GHG|ESG)'
+    none_match:
+      - '(評価).{0,80}(今後検討|検討中|予定)'
+
+  - tag: scope3_category_level
+    value: "yes"
+    any_match:
+      - '(Scope\s*3|スコープ\s*3).{0,200}(カテゴリ別|カテゴリー別|Category\s*[0-9]{1,2}|カテゴリ\s*[0-9]{1,2})'
+      - 'カテゴリ\s*1[0-5]'
+    none_match:
+      - '(Scope\s*3|スコープ\s*3).{0,80}(カテゴリ別は未開示|カテゴリ別は開示していない)'
+
+  - tag: scope3_reduction_target
+    value: "yes"
+    any_match:
+      - '(Scope\s*3|スコープ\s*3).{0,120}(削減目標|目標|ターゲット|削減率|\%|％|年).{0,80}(設定|掲げ|達成)'
+      - 'Scope\s*3.{0,80}(target|reduction)'
+    none_match:
+      - '(Scope\s*3|スコープ\s*3).{0,80}(目標は未設定|目標未設定|未設定)'
+
+  - tag: scope3_actions_described
+    value: "yes"
+    any_match:
+      - '(Scope\s*3|スコープ\s*3).{0,160}(施策|取組|取り組み|対策|削減活動|削減施策)'
+      - '(サプライヤ|調達|物流|製品設計|リサイクル|再生材).{0,120}(Scope\s*3|スコープ\s*3)'
+    none_match:
+      - '(Scope\s*3|スコープ\s*3).{0,80}(今後検討|検討中|予定)'
+
+  - tag: scope3_progress_disclosed
+    value: "yes"
+    any_match:
+      - '(Scope\s*3|スコープ\s*3).{0,200}(前年差|前年度比|推移|進捗|進展|年度).{0,80}([0-9]{4}|FY|年度)'
+      - 'Scope\s*3.{0,120}(progress|year[- ]on[- ]year|YoY)'
+    none_match:
+      - '(Scope\s*3|スコープ\s*3).{0,80}(進捗は未開示|推移は未開示)'
+
+  - tag: methodology_disclosed
+    value: "yes"
+    any_match:
+      - '(算定方法|算定基準|算定手法|算定範囲|算定ロジック|算定にあたって|算定における).{0,120}(Scope\s*3|スコープ\s*3|GHG|温室効果ガス)'
+      - '(GHGプロトコル|GHG Protocol|算定ガイドライン)'
+    none_match:
+      - '(算定方法).{0,60}(記載なし|未記載|未開示)'
+
+  - tag: boundary_clearly_defined
+    value: "yes"
+    any_match:
+      - '(連結|単体|グループ会社|子会社|持分法|対象範囲|バウンダリ|境界).{0,120}(Scope\s*3|スコープ\s*3|GHG|温室効果ガス)'
+      - '(organizational boundary|consolidation scope)'
+    none_match: []
+
+  - tag: product_use_phase_addressed
+    value: "yes"
+    any_match:
+      - '(使用段階|使用時|利用時|ユースフェーズ|use phase).{0,120}(排出|GHG|温室効果ガス|CO2|Scope\s*3|スコープ\s*3)'
+      - '(カテゴリ\s*11|Category\s*11).{0,80}(使用)'
+    none_match: []
+
+  - tag: supplier_emission_management
+    value: "yes"
+    any_match:
+      - '(サプライヤ|取引先|調達先).{0,160}(排出量|GHG|温室効果ガス|CO2).{0,120}(把握|管理|算定|収集|データ)'
+      - '(サプライヤ|取引先).{0,120}(評価|スコア|監査|モニタリング).{0,120}(排出|GHG)'
+    none_match:
+      - '(サプライヤ|取引先).{0,80}(排出量は未把握|把握していない|未収集)'
+
+  - tag: credit_used_as_primary_measure
+    value: "yes"
+    any_match:
+      - '(クレジット|オフセット|J-クレジット|カーボンクレジット).{0,120}(主要|中心|主な|メイン).{0,40}(手段|施策|対策)'
+      - '(オフセット).{0,80}(で達成|により達成|で実現)'
+      - '(carbon credit|offset).{0,80}(primary|main)'
+    none_match:
+      - '(クレジット|オフセット).{0,120}(補完|一部|限定|残余|residual)'
+
+  - tag: supplier_incentive_scheme_mentioned
+    value: "yes"
+    any_match:
+      - '(サプライヤ|取引先|調達先).{0,160}(インセンティブ|優遇|表彰|評価加点|支援金|補助|共同投資)'
+    none_match:
+      - '(インセンティブ).{0,60}(未実施|検討中)'
+
+  - tag: preferred_supplier_policy_linked_to_emissions
+    value: "yes"
+    any_match:
+      - '(優先調達|優先サプライヤ|preferred supplier).{0,160}(排出量|GHG|温室効果ガス|CO2).{0,80}(基準|要件|評価|条件)'
+      - '(調達方針|サプライヤ選定).{0,160}(排出量|GHG).{0,80}(反映|考慮|組み込)'
+    none_match: []
+
+  - tag: low_carbon_business_mentioned
+    value: "yes"
+    any_match:
+      - '(低炭素|脱炭素|再エネ|再生可能エネルギー|水素|アンモニア|省エネ|電化|EV|蓄電池|CCUS|カーボンリサイクル).{0,120}(事業|サービス|製品|ソリューション)'
+      - '(decarbon|low[- ]carbon|renewable|hydrogen|CCUS).{0,80}(business|solution|product)'
+    none_match: []
+
+  - tag: low_carbon_revenue_ratio_disclosed
+    value: "yes"
+    any_match:
+      - '(低炭素|脱炭素|GX|グリーン).{0,80}(売上|収益|revenue).{0,40}(比率|割合|\%|％|構成).{0,40}([0-9]{1,3})'
+      - '(売上).{0,120}(低炭素|GX).{0,80}(\%|％|比率|割合)'
+    none_match:
+      - '(低炭素).{0,60}(比率は未開示|非開示)'
+
+  - tag: portfolio_shift_plan_described
+    value: "yes"
+    any_match:
+      - '(ポートフォリオ|事業ポートフォリオ|portfolio).{0,160}(転換|シフト|入れ替え|再編|見直し|最適化)'
+      - '(事業).{0,120}(低炭素|脱炭素).{0,120}(シフト|転換|拡大|縮小)'
+    none_match:
+      - '(ポートフォリオ).{0,60}(検討中|今後)'
+
+  - tag: fossil_dependency_acknowledged
+    value: "yes"
+    any_match:
+      - '(化石燃料|石炭|石油|天然ガス).{0,120}(依存|依存度|リスク|移行リスク|規制リスク)'
+      - '(fossil).{0,80}(dependency|risk)'
+    none_match: []
+
+  - tag: asset_stranding_risk_mentioned
+    value: "yes"
+    any_match:
+      - '(座礁資産|ストランディング|stranded asset).{0,80}(リスク|可能性|懸念|影響)'
+    none_match: []
+
+  - tag: climate_related_patents_mentioned
+    value: "yes"
+    any_match:
+      - '(特許|patent).{0,120}(環境|省エネ|脱炭素|低炭素|再エネ|水素|CCUS|蓄電池|燃料電池)'
+      - 'J-?PlatPat'
+    none_match:
+      - '(特許).{0,60}(なし|保有していない|未保有)'
+
+  - tag: core_technology_positioned
+    value: "yes"
+    any_match:
+      - '(中核技術|コア技術|競争力の源泉|強み).{0,120}(脱炭素|低炭素|環境|省エネ|GX)'
+      - '(core technology|key technology).{0,80}(climate|decarbon|environment)'
+    none_match: []
+
+  - tag: rd_investment_disclosed
+    value: "yes"
+    any_match:
+      - '(研究開発費|R&D|研究開発投資|開発費).{0,80}([0-9]{1,3}[,，][0-9]{3}|[0-9]{2,}).{0,40}(円|¥|JPY|百万円|億円)'
+      - '(研究開発費|R&D).{0,80}(売上).{0,40}(\%|％|比率|割合)'
+    none_match:
+      - '(研究開発費|R&D).{0,60}(非開示|未開示)'
+
+  - tag: collaboration_with_startups
+    value: "yes"
+    any_match:
+      - '(スタートアップ|ベンチャー|新興企業|startup).{0,120}(協業|連携|提携|共同開発|PoC|実証)'
+    none_match: []
+
+  - tag: government_funded_projects_participated
+    value: "yes"
+    any_match:
+      - '(NEDO|JST|AMED|経産省|環境省|国交省|内閣府).{0,80}(事業|プロジェクト|補助|委託|採択)'
+      - '(公的|国|政府).{0,80}(研究|実証).{0,40}(プロジェクト|PJ)'
+    none_match: []
+
+  - tag: challenges_disclosed
+    value: "yes"
+    any_match:
+      - '(課題|リスク|懸念|不確実性|制約|弱み).{0,120}(脱炭素|気候|GHG|温室効果ガス|Scope\s*3|スコープ\s*3)'
+      - '(challenges|risks|limitations).{0,80}(climate|GHG|decarbon)'
+    none_match: []
+
+  - tag: failure_or_delay_explained
+    value: "yes"
+    any_match:
+      - '(未達|達成できなかった|遅延|遅れ).{0,80}(理由|要因|背景|原因|説明)'
+      - '(did not achieve|delay|behind schedule).{0,60}(reason|due to)'
+    none_match: []
+
+  - tag: assumptions_and_scope_clear
+    value: "yes"
+    any_match:
+      - '(前提|仮定|想定|対象範囲|スコープ|境界条件|算定範囲).{0,120}(明確|記載|説明|定義)'
+      - '(assumption|scope|boundary).{0,80}(defined|clarified|described)'
+    none_match: []
+
+  - tag: negative_case_examples_presented
+    value: "yes"
+    any_match:
+      - '(課題|リスク|未達|遅延|不祥事|事故|苦情|改善点).{0,80}(事例|ケース|具体例)'
+      - '(negative|incident|failure).{0,60}(case|example)'
+    none_match: []
+
+  - tag: data_comparability_over_time
+    value: "yes"
+    any_match:
+      - '(前年差|前年度比|推移|時系列|\bYoY\b|\bCAGR\b).{0,80}(比較|comparable|比較可能)'
+      - '(同一基準|算定基準変更).{0,80}(注記|補正|リステート|restate)'
+    none_match: []
+
+  - tag: kpi_definition_clear
+    value: "yes"
+    any_match:
+      - '(KPI|指標).{0,80}(定義|算定式|算出方法|注記|補足)'
+      - '(definition of KPI|KPI definition)'
+    none_match: []
+
+  - tag: scenario_analysis_conducted
+    value: "yes"
+    any_match:
+      - '(シナリオ分析|scenario analysis|1\.5℃|2℃|4℃|IEA|IPCC).{0,120}(分析|評価|検討)'
+    none_match:
+      - '(シナリオ分析).{0,60}(未実施|検討中|今後)'
+
+  - tag: transition_risk_quantified
+    value: "yes"
+    any_match:
+      - '(移行リスク|transition risk).{0,120}(定量|定量評価|金額|影響額|感度分析|モデル)'
+      - '(移行リスク).{0,80}(\b[0-9]{1,3}[,，][0-9]{3}\b|億円|百万円|\%|％)'
+    none_match: []
+
+  - tag: physical_risk_addressed
+    value: "yes"
+    any_match:
+      - '(物理リスク|physical risk|洪水|高潮|台風|猛暑|熱波|渇水|干ばつ|海面上昇).{0,120}(影響|リスク|対策|評価)'
+    none_match: []
+
+  - tag: climate_targets_timebound
+    value: "yes"
+    any_match:
+      - '(2030|2040|2050).{0,60}(目標|ターゲット|削減|Net\s*Zero|カーボンニュートラル)'
+      - '(by\s*20[3-5]0).{0,40}(target|goal|net zero|carbon neutral)'
+    none_match: []
+
+  - tag: capital_allocation_aligned
+    value: "yes"
+    any_match:
+      - '(投資配分|資本配分|CAPEX|投資計画|資本政策).{0,120}(脱炭素|GX|気候|戦略).{0,80}(整合|連動|一致)'
+      - '(capital allocation|capex).{0,80}(aligned|consistent).{0,40}(climate|strategy)'
+    none_match: []
+
+  - tag: supplier_data_coverage_ratio_disclosed
+    value: "yes"
+    any_match:
+      - '(カバー率|対象率|coverage).{0,40}(\%|％).{0,60}(サプライヤ|取引先|調達先)'
+      - '(サプライヤ|取引先).{0,80}(\%|％).{0,40}(カバー|対象)'
+    none_match: []
+
+  - tag: internal_audit_on_climate_data
+    value: "yes"
+    any_match:
+      - '(内部監査|internal audit).{0,120}(気候|GHG|温室効果ガス|サステナビリティ|ESG).{0,80}(データ|情報|開示)'
+    none_match: []
+
+  - tag: grievance_mechanism_for_suppliers
+    value: "yes"
+    any_match:
+      - '(苦情処理|通報窓口|相談窓口|ホットライン|grievance).{0,120}(サプライヤ|取引先|調達先)'
+      - '(サプライヤ|取引先).{0,120}(通報|苦情|相談).{0,40}(制度|窓口)'
+    none_match: []
+
+  - tag: climate_training_for_management
+    value: "yes"
+    any_match:
+      - '(研修|トレーニング|講習).{0,120}(経営層|管理職|役員).{0,80}(気候|脱炭素|ESG)'
+      - '(training).{0,80}(management|executives).{0,40}(climate|ESG)'
+    none_match: []
+
+  - tag: continuous_improvement_statement
+    value: "yes"
+    any_match:
+      - '(継続的改善|継続改善|PDCA|改善サイクル|continuous improvement).{0,80}(実施|推進|運用|方針)'
+      - '(モニタリング|レビュー).{0,60}(継続|定期)'
+    none_match: []
+
+# Structure/axis judgments used by scripts/phase3/rules/apply_rules.py
+# Keep placeholders for now; implement later.
+axes: {}

@@ -1,0 +1,162 @@
+#!/usr/bin/env python3
+"""
+Phase3 ranking utility (ranktop).
+
+This script builds a deterministic ranking from Phase3 outputs.
+
+Why:
+- Phase3 already produced structured judgments (core + structures) into `phase3_scores.csv`.
+- We want an explainable, re-runnable shortlist step that is lightweight.
+- Later you will blend in J-PlatPat / ICP / external data; for now this ranking uses only Phase3 outputs.
+
+Input:
+- phase3_scores.csv (data/scores/p3/<run_id>/phase3_scores.csv)
+
+Output:
+- phase3_ranktop_full.csv  : full ranking table
+- phase3_ranktop_top20.csv : top-K (default 20)
+
+Ranking logic (full use of tagging outcomes via aggregated axes):
+Primary:
+- core_yes := numerator of core_score axis_label (e.g. 13/27 -> 13)
+
+Tie-breakers (in order):
+- structure_coverage := number of struct::* axes with numerator > 0 (ignore struct::全体)
+- impl_strength := struct::ガバナンス + struct::Scope3 numerators (hard implementation signals)
+- transparency_strength := struct::透明性 numerator
+- supplychain_strength  := struct::サプライチェーン numerator
+- transition_strength   := struct::事業転換 numerator
+- innovation_strength   := struct::イノベーション numerator
+- regulation_strength   := struct::規制対応 numerator
+"""
+
+from __future__ import annotations
+from pathlib import Path
+import argparse
+import pandas as pd
+
+
+def _num_den(v: object) -> tuple[int, int]:
+    """Parse '13/27' -> (13, 27). Returns (0, 0) on failure."""
+    if v is None or (isinstance(v, float) and pd.isna(v)):
+        return 0, 0
+    s = str(v).strip()
+    if "/" not in s:
+        return 0, 0
+    a, b = s.split("/", 1)
+    try:
+        return int(a.strip()), int(b.strip())
+    except Exception:
+        return 0, 0
+
+
+def main() -> int:
+    ap = argparse.ArgumentParser(description="Phase3 ranktop: build ranking from phase3_scores.csv")
+    ap.add_argument("--scores_csv", required=True, help="Input phase3_scores.csv path")
+    ap.add_argument("--out_dir", default=None, help="Output directory (default: parent dir of scores_csv)")
+    ap.add_argument("--top_k", type=int, default=20)
+    args = ap.parse_args()
+
+    scores_csv = Path(args.scores_csv)
+    if not scores_csv.exists():
+        raise FileNotFoundError(f"scores_csv not found: {scores_csv}")
+
+    out_dir = Path(args.out_dir) if args.out_dir else scores_csv.parent
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    df = pd.read_csv(scores_csv)
+    required_cols = {"entity_id", "axis_id", "axis_label"}
+    missing = required_cols - set(df.columns)
+    if missing:
+        raise ValueError(f"Missing required columns: {sorted(missing)}. Found: {list(df.columns)}")
+
+    nums, dens = zip(*(_num_den(v) for v in df["axis_label"].tolist()))
+    df = df.copy()
+    df["num"] = list(nums)
+    df["den"] = list(dens)
+
+    # ---- primary: core_score ----
+    core = df[df["axis_id"] == "core_score"][["entity_id", "num", "den"]].drop_duplicates()
+    core = core.set_index("entity_id").rename(columns={"num": "core_yes", "den": "core_den"})
+
+    # allow entities missing core_score (becomes 0)
+    rank = core.copy()
+
+    # ---- structures ----
+    struct = df[df["axis_id"].astype(str).str.startswith("struct::")].copy()
+    struct = struct[~struct["axis_id"].isin(["struct::全体"])].copy()
+
+    # breadth: how many structural areas have any "yes"
+    structure_coverage = (
+        struct.assign(has_yes=struct["num"] > 0)
+        .groupby("entity_id")["has_yes"]
+        .sum()
+        .rename("structure_coverage")
+        .astype(int)
+    )
+
+    def _struct_num(axis_id: str, col_name: str) -> pd.Series:
+        s = struct[struct["axis_id"] == axis_id].set_index("entity_id")["num"]
+        return s.rename(col_name)
+
+    governance = _struct_num("struct::ガバナンス", "governance_strength")
+    scope3 = _struct_num("struct::Scope3", "scope3_strength")
+
+    # hard implementation proxy
+    impl_strength = (governance.fillna(0) + scope3.fillna(0)).rename("impl_strength")
+
+    transparency = _struct_num("struct::透明性", "transparency_strength")
+    supplychain = _struct_num("struct::サプライチェーン", "supplychain_strength")
+    transition = _struct_num("struct::事業転換", "transition_strength")
+    innovation = _struct_num("struct::イノベーション", "innovation_strength")
+    regulation = _struct_num("struct::規制対応", "regulation_strength")
+
+    # merge all signals
+    rank = (
+        rank.join(structure_coverage, how="outer")
+        .join(impl_strength, how="outer")
+        .join(transparency, how="outer")
+        .join(supplychain, how="outer")
+        .join(transition, how="outer")
+        .join(innovation, how="outer")
+        .join(regulation, how="outer")
+        .fillna(0)
+    )
+
+    # stable ints
+    for c in [
+        "core_yes", "core_den",
+        "structure_coverage", "impl_strength",
+        "transparency_strength", "supplychain_strength",
+        "transition_strength", "innovation_strength", "regulation_strength",
+    ]:
+        if c in rank.columns:
+            rank[c] = rank[c].astype(int)
+
+    sort_cols = [
+        "core_yes",
+        "structure_coverage",
+        "impl_strength",
+        "transparency_strength",
+        "supplychain_strength",
+        "transition_strength",
+        "innovation_strength",
+        "regulation_strength",
+    ]
+
+    rank = rank.sort_values(sort_cols, ascending=[False] * len(sort_cols)).reset_index()
+    rank.insert(0, "rank", range(1, len(rank) + 1))
+
+    full_path = out_dir / "phase3_ranktop_full.csv"
+    top_path = out_dir / f"phase3_ranktop_top{args.top_k}.csv"
+
+    rank.to_csv(full_path, index=False)
+    rank.head(args.top_k).to_csv(top_path, index=False)
+
+    print(f"[OK] full ranking  -> {full_path}")
+    print(f"[OK] top-{args.top_k} shortlist -> {top_path}")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

@@ -7,7 +7,7 @@ This folder contains utilities to extract *embedded text* from Integrated Report
 - **Input (PDFs):** `data/source/corpus/*.pdf`
 - **Output (recommended):** `data/interim/phase3/<run_id>/corpus_text/`
   - `<company>.txt` : page-delimited extracted text
-  - `<company>_blocks.csv` : optional block-level text (with bbox) for evidence quoting
+  - `<company>_blocks.csv` : optional block-level text (with bbox)
   - `_extract_summary.csv` : extraction summary (pages, low-text pages)
 
 > `run_id` can be reused while you incrementally add companies (e.g., test 1 company first, then add more into the same folder).
@@ -15,7 +15,7 @@ This folder contains utilities to extract *embedded text* from Integrated Report
 ## Quick start (one company)
 
 ```bash
-RUN_ID=$(date "+%Y%m%d_%H%M")
+RUN_ID=$(date "+%Y%m%d_%H%M")_pymupdf
 mkdir -p data/interim/phase3/${RUN_ID}/corpus_text
 
 python3 scripts/phase3/corpus/extract_pdf_text.py \
@@ -29,7 +29,7 @@ python3 scripts/phase3/corpus/extract_pdf_text.py \
 ## Run for all PDFs in the corpus directory
 
 ```bash
-RUN_ID=$(date "+%Y%m%d_%H%M")
+RUN_ID=20260104_2047_pymupdf  # or set your own
 mkdir -p data/interim/phase3/${RUN_ID}/corpus_text
 
 python3 scripts/phase3/corpus/extract_pdf_text.py \
@@ -47,10 +47,10 @@ The script prints:
 - `low_text_pages = X / total_pages`
 
 If `X` is small (often 0–a few pages), the PDF likely contains embedded text and you can proceed without OCR.
-If `X` is large, the PDF may be image/scanned; consider OCR *only for the needed chapters/pages* (do not OCR the whole file).
+If `X` is large, the PDF may be image/scanned; consider OCR *only for the needed chapters/pages*.
 
 ## Notes
 
-- The extraction assumes **embedded-text PDFs**. If a PDF is mostly scanned images, you will see many `LIKELY_IMAGE_OR_NO_TEXT` pages.
+- Extraction assumes **embedded-text PDFs**. If a PDF is mostly scanned images, you will see many `LIKELY_IMAGE_OR_NO_TEXT` pages.
 - `--skip_existing` allows reusing the same `run_id` output folder while incrementally processing more companies.
 - `--append_summary` appends to `_extract_summary.csv` instead of overwriting it.

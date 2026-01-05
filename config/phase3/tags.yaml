@@ -1,333 +1,338 @@
-version: 0.1
-value_domain: [YES, NO, UNK]
+version: 1
+summary:
+  total: 55
+  core: 27
+  support: 18
+  observe: 10
+
 tags:
-  - id: tag_001
-    name: TBD_001
-    description: TODO: define tag meaning
-    category: TBD
-    value_domain: [YES, NO, UNK]
-    source_hint: TBD
-  - id: tag_002
-    name: TBD_002
-    description: TODO: define tag meaning
-    category: TBD
-    value_domain: [YES, NO, UNK]
-    source_hint: TBD
-  - id: tag_003
-    name: TBD_003
-    description: TODO: define tag meaning
-    category: TBD
-    value_domain: [YES, NO, UNK]
-    source_hint: TBD
-  - id: tag_004
-    name: TBD_004
-    description: TODO: define tag meaning
-    category: TBD
-    value_domain: [YES, NO, UNK]
-    source_hint: TBD
-  - id: tag_005
-    name: TBD_005
-    description: TODO: define tag meaning
-    category: TBD
-    value_domain: [YES, NO, UNK]
-    source_hint: TBD
-  - id: tag_006
-    name: TBD_006
-    description: TODO: define tag meaning
-    category: TBD
-    value_domain: [YES, NO, UNK]
-    source_hint: TBD
-  - id: tag_007
-    name: TBD_007
-    description: TODO: define tag meaning
-    category: TBD
-    value_domain: [YES, NO, UNK]
-    source_hint: TBD
-  - id: tag_008
-    name: TBD_008
-    description: TODO: define tag meaning
-    category: TBD
-    value_domain: [YES, NO, UNK]
-    source_hint: TBD
-  - id: tag_009
-    name: TBD_009
-    description: TODO: define tag meaning
-    category: TBD
-    value_domain: [YES, NO, UNK]
-    source_hint: TBD
-  - id: tag_010
-    name: TBD_010
-    description: TODO: define tag meaning
-    category: TBD
-    value_domain: [YES, NO, UNK]
-    source_hint: TBD
-  - id: tag_011
-    name: TBD_011
-    description: TODO: define tag meaning
-    category: TBD
-    value_domain: [YES, NO, UNK]
-    source_hint: TBD
-  - id: tag_012
-    name: TBD_012
-    description: TODO: define tag meaning
-    category: TBD
-    value_domain: [YES, NO, UNK]
-    source_hint: TBD
-  - id: tag_013
-    name: TBD_013
-    description: TODO: define tag meaning
-    category: TBD
-    value_domain: [YES, NO, UNK]
-    source_hint: TBD
-  - id: tag_014
-    name: TBD_014
-    description: TODO: define tag meaning
-    category: TBD
-    value_domain: [YES, NO, UNK]
-    source_hint: TBD
-  - id: tag_015
-    name: TBD_015
-    description: TODO: define tag meaning
-    category: TBD
-    value_domain: [YES, NO, UNK]
-    source_hint: TBD
-  - id: tag_016
-    name: TBD_016
-    description: TODO: define tag meaning
-    category: TBD
-    value_domain: [YES, NO, UNK]
-    source_hint: TBD
-  - id: tag_017
-    name: TBD_017
-    description: TODO: define tag meaning
-    category: TBD
-    value_domain: [YES, NO, UNK]
-    source_hint: TBD
-  - id: tag_018
-    name: TBD_018
-    description: TODO: define tag meaning
-    category: TBD
-    value_domain: [YES, NO, UNK]
-    source_hint: TBD
-  - id: tag_019
-    name: TBD_019
-    description: TODO: define tag meaning
-    category: TBD
-    value_domain: [YES, NO, UNK]
-    source_hint: TBD
-  - id: tag_020
-    name: TBD_020
-    description: TODO: define tag meaning
-    category: TBD
-    value_domain: [YES, NO, UNK]
-    source_hint: TBD
-  - id: tag_021
-    name: TBD_021
-    description: TODO: define tag meaning
-    category: TBD
-    value_domain: [YES, NO, UNK]
-    source_hint: TBD
-  - id: tag_022
-    name: TBD_022
-    description: TODO: define tag meaning
-    category: TBD
-    value_domain: [YES, NO, UNK]
-    source_hint: TBD
-  - id: tag_023
-    name: TBD_023
-    description: TODO: define tag meaning
-    category: TBD
-    value_domain: [YES, NO, UNK]
-    source_hint: TBD
-  - id: tag_024
-    name: TBD_024
-    description: TODO: define tag meaning
-    category: TBD
-    value_domain: [YES, NO, UNK]
-    source_hint: TBD
-  - id: tag_025
-    name: TBD_025
-    description: TODO: define tag meaning
-    category: TBD
-    value_domain: [YES, NO, UNK]
-    source_hint: TBD
-  - id: tag_026
-    name: TBD_026
-    description: TODO: define tag meaning
-    category: TBD
-    value_domain: [YES, NO, UNK]
-    source_hint: TBD
-  - id: tag_027
-    name: TBD_027
-    description: TODO: define tag meaning
-    category: TBD
-    value_domain: [YES, NO, UNK]
-    source_hint: TBD
-  - id: tag_028
-    name: TBD_028
-    description: TODO: define tag meaning
-    category: TBD
-    value_domain: [YES, NO, UNK]
-    source_hint: TBD
-  - id: tag_029
-    name: TBD_029
-    description: TODO: define tag meaning
-    category: TBD
-    value_domain: [YES, NO, UNK]
-    source_hint: TBD
-  - id: tag_030
-    name: TBD_030
-    description: TODO: define tag meaning
-    category: TBD
-    value_domain: [YES, NO, UNK]
-    source_hint: TBD
-  - id: tag_031
-    name: TBD_031
-    description: TODO: define tag meaning
-    category: TBD
-    value_domain: [YES, NO, UNK]
-    source_hint: TBD
-  - id: tag_032
-    name: TBD_032
-    description: TODO: define tag meaning
-    category: TBD
-    value_domain: [YES, NO, UNK]
-    source_hint: TBD
-  - id: tag_033
-    name: TBD_033
-    description: TODO: define tag meaning
-    category: TBD
-    value_domain: [YES, NO, UNK]
-    source_hint: TBD
-  - id: tag_034
-    name: TBD_034
-    description: TODO: define tag meaning
-    category: TBD
-    value_domain: [YES, NO, UNK]
-    source_hint: TBD
-  - id: tag_035
-    name: TBD_035
-    description: TODO: define tag meaning
-    category: TBD
-    value_domain: [YES, NO, UNK]
-    source_hint: TBD
-  - id: tag_036
-    name: TBD_036
-    description: TODO: define tag meaning
-    category: TBD
-    value_domain: [YES, NO, UNK]
-    source_hint: TBD
-  - id: tag_037
-    name: TBD_037
-    description: TODO: define tag meaning
-    category: TBD
-    value_domain: [YES, NO, UNK]
-    source_hint: TBD
-  - id: tag_038
-    name: TBD_038
-    description: TODO: define tag meaning
-    category: TBD
-    value_domain: [YES, NO, UNK]
-    source_hint: TBD
-  - id: tag_039
-    name: TBD_039
-    description: TODO: define tag meaning
-    category: TBD
-    value_domain: [YES, NO, UNK]
-    source_hint: TBD
-  - id: tag_040
-    name: TBD_040
-    description: TODO: define tag meaning
-    category: TBD
-    value_domain: [YES, NO, UNK]
-    source_hint: TBD
-  - id: tag_041
-    name: TBD_041
-    description: TODO: define tag meaning
-    category: TBD
-    value_domain: [YES, NO, UNK]
-    source_hint: TBD
-  - id: tag_042
-    name: TBD_042
-    description: TODO: define tag meaning
-    category: TBD
-    value_domain: [YES, NO, UNK]
-    source_hint: TBD
-  - id: tag_043
-    name: TBD_043
-    description: TODO: define tag meaning
-    category: TBD
-    value_domain: [YES, NO, UNK]
-    source_hint: TBD
-  - id: tag_044
-    name: TBD_044
-    description: TODO: define tag meaning
-    category: TBD
-    value_domain: [YES, NO, UNK]
-    source_hint: TBD
-  - id: tag_045
-    name: TBD_045
-    description: TODO: define tag meaning
-    category: TBD
-    value_domain: [YES, NO, UNK]
-    source_hint: TBD
-  - id: tag_046
-    name: TBD_046
-    description: TODO: define tag meaning
-    category: TBD
-    value_domain: [YES, NO, UNK]
-    source_hint: TBD
-  - id: tag_047
-    name: TBD_047
-    description: TODO: define tag meaning
-    category: TBD
-    value_domain: [YES, NO, UNK]
-    source_hint: TBD
-  - id: tag_048
-    name: TBD_048
-    description: TODO: define tag meaning
-    category: TBD
-    value_domain: [YES, NO, UNK]
-    source_hint: TBD
-  - id: tag_049
-    name: TBD_049
-    description: TODO: define tag meaning
-    category: TBD
-    value_domain: [YES, NO, UNK]
-    source_hint: TBD
-  - id: tag_050
-    name: TBD_050
-    description: TODO: define tag meaning
-    category: TBD
-    value_domain: [YES, NO, UNK]
-    source_hint: TBD
-  - id: tag_051
-    name: TBD_051
-    description: TODO: define tag meaning
-    category: TBD
-    value_domain: [YES, NO, UNK]
-    source_hint: TBD
-  - id: tag_052
-    name: TBD_052
-    description: TODO: define tag meaning
-    category: TBD
-    value_domain: [YES, NO, UNK]
-    source_hint: TBD
-  - id: tag_053
-    name: TBD_053
-    description: TODO: define tag meaning
-    category: TBD
-    value_domain: [YES, NO, UNK]
-    source_hint: TBD
-  - id: tag_054
-    name: TBD_054
-    description: TODO: define tag meaning
-    category: TBD
-    value_domain: [YES, NO, UNK]
-    source_hint: TBD
-  - id: tag_055
-    name: TBD_055
-    description: TODO: define tag meaning
-    category: TBD
-    value_domain: [YES, NO, UNK]
-    source_hint: TBD
+  - no: 1
+    tag: icp_present
+    meaning_yes: "内部炭素価格（ICP）の導入が明記"
+    class: core
+    structure: "規制対応"
+    in_score: true
+  - no: 2
+    tag: icp_used_for_investment
+    meaning_yes: "ICPが投資・設備・事業判断に使用"
+    class: core
+    structure: "規制対応"
+    in_score: true
+  - no: 3
+    tag: sbti_committed
+    meaning_yes: "SBTiへの参加・コミットが明記"
+    class: core
+    structure: "規制対応"
+    in_score: true
+  - no: 4
+    tag: sbti_linked_to_strategy
+    meaning_yes: "SBTi目標が中計・戦略・KPIに接続"
+    class: core
+    structure: "規制対応"
+    in_score: true
+  - no: 5
+    tag: internal_carbon_price_level_disclosed
+    meaning_yes: "ICPの価格水準（数値/レンジ）開示"
+    class: support
+    structure: "規制対応"
+    in_score: false
+  - no: 6
+    tag: carbon_cost_considered_in_capex
+    meaning_yes: "設備投資判断に炭素コスト考慮"
+    class: support
+    structure: "規制対応"
+    in_score: false
+  - no: 7
+    tag: transition_plan_published
+    meaning_yes: "トランジションプランが文書化"
+    class: support
+    structure: "規制対応"
+    in_score: false
+  - no: 8
+    tag: board_level_discussion
+    meaning_yes: "取締役会レベルで気候議論あり"
+    class: core
+    structure: "ガバナンス"
+    in_score: true
+  - no: 9
+    tag: board_committee_exists
+    meaning_yes: "気候/ESG委員会の設置"
+    class: core
+    structure: "ガバナンス"
+    in_score: true
+  - no: 10
+    tag: executive_compensation_linked
+    meaning_yes: "役員報酬と気候指標が連動"
+    class: core
+    structure: "ガバナンス"
+    in_score: true
+  - no: 11
+    tag: clear_responsibility_line
+    meaning_yes: "担当役員・報告ライン明確"
+    class: core
+    structure: "ガバナンス"
+    in_score: true
+  - no: 12
+    tag: frequency_of_board_discussion_disclosed
+    meaning_yes: "議論頻度（年◯回等）明記"
+    class: support
+    structure: "ガバナンス"
+    in_score: false
+  - no: 13
+    tag: external_expert_involved
+    meaning_yes: "外部有識者の関与"
+    class: support
+    structure: "ガバナンス"
+    in_score: false
+  - no: 14
+    tag: climate_kpi_in_management_evaluation
+    meaning_yes: "管理職評価に気候KPI"
+    class: support
+    structure: "ガバナンス"
+    in_score: false
+  - no: 15
+    tag: scope3_disclosed
+    meaning_yes: "Scope3排出量を開示"
+    class: core
+    structure: "Scope3"
+    in_score: true
+  - no: 16
+    tag: scope3_category_level
+    meaning_yes: "Scope3をカテゴリ別に開示"
+    class: core
+    structure: "Scope3"
+    in_score: true
+  - no: 17
+    tag: scope3_reduction_target
+    meaning_yes: "Scope3削減目標あり"
+    class: core
+    structure: "Scope3"
+    in_score: true
+  - no: 18
+    tag: scope3_actions_described
+    meaning_yes: "Scope3削減施策を記述"
+    class: core
+    structure: "Scope3"
+    in_score: true
+  - no: 19
+    tag: scope3_progress_disclosed
+    meaning_yes: "Scope3進捗・前年差を開示"
+    class: core
+    structure: "Scope3"
+    in_score: true
+  - no: 20
+    tag: methodology_disclosed
+    meaning_yes: "算定方法・基準を説明"
+    class: support
+    structure: "Scope3"
+    in_score: false
+  - no: 21
+    tag: boundary_clearly_defined
+    meaning_yes: "算定範囲（連結等）が明確"
+    class: support
+    structure: "Scope3"
+    in_score: false
+  - no: 22
+    tag: product_use_phase_addressed
+    meaning_yes: "製品使用段階排出に言及"
+    class: support
+    structure: "Scope3"
+    in_score: false
+  - no: 23
+    tag: supplier_engagement_described
+    meaning_yes: "取引先への削減要請・協働"
+    class: core
+    structure: "サプライチェーン"
+    in_score: true
+  - no: 24
+    tag: supplier_emission_management
+    meaning_yes: "サプライヤー排出量管理"
+    class: core
+    structure: "サプライチェーン"
+    in_score: true
+  - no: 25
+    tag: voluntary_credit_used
+    meaning_yes: "カーボンクレジット使用"
+    class: core
+    structure: "サプライチェーン"
+    in_score: true
+  - no: 26
+    tag: credit_used_as_primary_measure
+    meaning_yes: "クレジットが主要対策"
+    class: core
+    structure: "サプライチェーン"
+    in_score: true
+  - no: 27
+    tag: supplier_incentive_scheme_mentioned
+    meaning_yes: "取引先向けインセンティブ"
+    class: observe
+    structure: "サプライチェーン"
+    in_score: false
+  - no: 28
+    tag: preferred_supplier_policy_linked_to_emissions
+    meaning_yes: "排出量を調達方針に反映"
+    class: observe
+    structure: "サプライチェーン"
+    in_score: false
+  - no: 29
+    tag: low_carbon_business_mentioned
+    meaning_yes: "低炭素事業に言及"
+    class: core
+    structure: "事業転換"
+    in_score: true
+  - no: 30
+    tag: low_carbon_revenue_ratio_disclosed
+    meaning_yes: "低炭素事業売上比率開示"
+    class: core
+    structure: "事業転換"
+    in_score: true
+  - no: 31
+    tag: portfolio_shift_plan_described
+    meaning_yes: "事業転換計画を記述"
+    class: core
+    structure: "事業転換"
+    in_score: true
+  - no: 32
+    tag: fossil_dependency_acknowledged
+    meaning_yes: "化石燃料依存リスク言及"
+    class: observe
+    structure: "事業転換"
+    in_score: false
+  - no: 33
+    tag: asset_stranding_risk_mentioned
+    meaning_yes: "座礁資産リスク言及"
+    class: observe
+    structure: "事業転換"
+    in_score: false
+  - no: 34
+    tag: climate_related_patents_mentioned
+    meaning_yes: "環境・気候関連特許言及"
+    class: core
+    structure: "イノベーション"
+    in_score: true
+  - no: 35
+    tag: core_technology_positioned
+    meaning_yes: "中核技術として位置付け"
+    class: core
+    structure: "イノベーション"
+    in_score: true
+  - no: 36
+    tag: rd_investment_disclosed
+    meaning_yes: "R&D投資額・比率開示"
+    class: core
+    structure: "イノベーション"
+    in_score: true
+  - no: 37
+    tag: collaboration_with_startups
+    meaning_yes: "スタートアップ等と協業"
+    class: observe
+    structure: "イノベーション"
+    in_score: false
+  - no: 38
+    tag: government_funded_projects_participated
+    meaning_yes: "公的研究PJ参加"
+    class: observe
+    structure: "イノベーション"
+    in_score: false
+  - no: 39
+    tag: challenges_disclosed
+    meaning_yes: "課題・リスクを明示"
+    class: core
+    structure: "透明性"
+    in_score: true
+  - no: 40
+    tag: failure_or_delay_explained
+    meaning_yes: "未達・遅延理由を説明"
+    class: core
+    structure: "透明性"
+    in_score: true
+  - no: 41
+    tag: assumptions_and_scope_clear
+    meaning_yes: "前提条件・対象範囲明確"
+    class: core
+    structure: "透明性"
+    in_score: true
+  - no: 42
+    tag: negative_case_examples_presented
+    meaning_yes: "ネガティブ事例記載"
+    class: observe
+    structure: "透明性"
+    in_score: false
+  - no: 43
+    tag: third_party_assurance_provided
+    meaning_yes: "第三者保証・検証あり"
+    class: core
+    structure: "透明性"
+    in_score: true
+  - no: 44
+    tag: data_comparability_over_time
+    meaning_yes: "時系列比較可能な開示"
+    class: support
+    structure: "透明性"
+    in_score: false
+  - no: 45
+    tag: kpi_definition_clear
+    meaning_yes: "KPI定義が明確"
+    class: support
+    structure: "透明性"
+    in_score: false
+  - no: 46
+    tag: scenario_analysis_conducted
+    meaning_yes: "シナリオ分析実施"
+    class: support
+    structure: "規制対応"
+    in_score: false
+  - no: 47
+    tag: transition_risk_quantified
+    meaning_yes: "移行リスクを定量評価"
+    class: support
+    structure: "規制対応"
+    in_score: false
+  - no: 48
+    tag: physical_risk_addressed
+    meaning_yes: "物理リスクに言及"
+    class: support
+    structure: "規制対応"
+    in_score: false
+  - no: 49
+    tag: climate_targets_timebound
+    meaning_yes: "期限付き目標設定"
+    class: support
+    structure: "規制対応"
+    in_score: false
+  - no: 50
+    tag: capital_allocation_aligned
+    meaning_yes: "投資配分が戦略と整合"
+    class: support
+    structure: "規制対応"
+    in_score: false
+  - no: 51
+    tag: supplier_data_coverage_ratio_disclosed
+    meaning_yes: "取引先カバー率開示"
+    class: observe
+    structure: "サプライチェーン"
+    in_score: false
+  - no: 52
+    tag: internal_audit_on_climate_data
+    meaning_yes: "気候データ内部監査"
+    class: observe
+    structure: "ガバナンス"
+    in_score: false
+  - no: 53
+    tag: grievance_mechanism_for_suppliers
+    meaning_yes: "取引先苦情処理制度"
+    class: observe
+    structure: "サプライチェーン"
+    in_score: false
+  - no: 54
+    tag: climate_training_for_management
+    meaning_yes: "経営層向け気候研修"
+    class: observe
+    structure: "ガバナンス"
+    in_score: false
+  - no: 55
+    tag: continuous_improvement_statement
+    meaning_yes: "継続改善プロセス言及"
+    class: observe
+    structure: "全体"
+    in_score: false
