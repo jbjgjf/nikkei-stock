@@ -1,0 +1,39 @@
+version: 1
+
+# Mappings are applied AFTER merges.
+# The script creates numeric columns named: <column>_num
+# Unmapped values / blanks => NaN
+
+mappings:
+  # Notion manual fields (prefixed by the script)
+  notion__sbti_joined:
+    "はい": 1
+    "いいえ": 0
+
+  notion__scope12_disclosure:
+    "両方": 1
+    "1のみ": 0.5
+    "いいえ": 0
+
+  notion__scope3_disclosure:
+    "はい": 1
+    "いいえ": 0
+
+  notion__icp_status:
+    "はい": 1
+    "検討中": 0.5
+    "いいえ": 0
+
+  notion__voluntary_credit_usage:
+    "主体的利用": 1
+    "補完的利用": 0.5
+    "検討中": 0.25
+    "なし": 0
+
+  notion__survey_answered:
+    "はい": 1
+    "いいえ": 0
+
+notes:
+  - "If you add new categorical columns in fromnotion.csv, extend mappings here."
+  - "Keep original string columns; numeric columns are created as *_num."

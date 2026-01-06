@@ -1,0 +1,2 @@
+company_name,source_files,asof,doc_count_total,apps_count_5y,grant_count,grant_rate,valid_patent_count,valid_patent_rate,maintenance_event_count,maintenance_event_rate,coapp_count,coapp_rate,fi_unique_count
+戸田建設,/Users/shou/hobby/CPX/nikkei-stock/data/source/patent_counts/戸田建設/戸田建設①.csv|/Users/shou/hobby/CPX/nikkei-stock/data/source/patent_counts/戸田建設/戸田建設②.csv,2026-01-06,510,29,509,0.9980392156862745,510,1.0,314,0.615686274509804,264,0.5176470588235295,999

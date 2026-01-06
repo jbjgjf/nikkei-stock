@@ -1,0 +1,14 @@
+{
+  "input_dir": "/Users/shou/hobby/CPX/nikkei-stock/data/source/patent_counts",
+  "out_dir": "/Users/shou/hobby/CPX/nikkei-stock/data/features/patents/patent_features_v1_20260106_101801",
+  "asof": "2026-01-06",
+  "csv_files_found": 32,
+  "companies_inferred": 29,
+  "companies_output": 29,
+  "skipped_files": [
+    "/Users/shou/hobby/CPX/nikkei-stock/data/source/patent_counts/test.csv"
+  ],
+  "skipped_files_count": 1,
+  "failed_files": [],
+  "failed_files_count": 0
+}
